@@ -1,0 +1,52 @@
+{
+  "name": "@-nerko/gatsby",
+  "private": false,
+  "description": "nerko gatsby",
+  "version": "1.0",
+  "author": "nerko gatsby",
+  "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "@reach/router": "^1.3.4",
+    "animejs": "^3.2.1",
+    "bootstrap": "^5.2.2",
+    "browser-monads": "^1.0.0",
+    "gatsby": "^5.1.0",
+    "gatsby-plugin-anchor-links": "^1.2.1",
+    "gatsby-plugin-image": "^3.1.0",
+    "gatsby-plugin-sass": "^6.1.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.0.0",
+    "react-scroll": "^1.8.9",
+    "sass": "1.49.11",
+    "swiper": "^9.0.2"
+  },
+  "devDependencies": {
+    "prettier": "2.5.1"
+  },
+  "keywords": [
+    "gatsby",
+    "starter",
+    "bootstrap",
+    "sass"
+  ],
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/r-ichard/gatsby-starter-bootstrap-5.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "homepage": "https://github.com/r-ichard/gatsby-starter-bootstrap-5#readme",
+  "main": "gatsby-browser.js"
+}
