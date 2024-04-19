@@ -1,45 +1,36 @@
 export const menu_data = [
   {
     id: 1,
-    hasDropdown: true,
     title: 'Home',
     link: 'home',
-    submenus: [
-      { title: 'Home One', link: '/' },
-      { title: 'Home Two', link: '/home-2/' },
-      { title: 'Home Three', link: '/home-3/' },
-    ]
   },
   {
     id: 2,
-    title: 'Minting',
-    link: 'minting',
-  },
-  {
-    id: 3,
     title: 'About',
     link: 'about',
   },
   {
+    id: 3,
+    title: 'NetZero',
+    link: 'netZero',
+  },
+  {
     id: 4,
-    title: 'Collection',
-    link: 'collection',
+    hasDropdown:true,
+    title: 'Services',
+    submenus: [
+      { title: 'CarbonMarket' },
+    ]
+  },
+  {
+    id: 4,
+    title: 'Blog',
   },
   {
     id: 5,
-    title: 'Road Map',
-    link: 'roadmap',
-  },
-  {
-    id: 6,
-    hasDropdown: true,
-    title: 'Blog',
-    link: '/blog',
-    submenus: [
-      { title: 'Blog', link: '/blog/' },
-      { title: 'Blog Details', link: '/blog-details/' },
-    ]
-  },
+    title: 'Contact Us',
+    link: 'contact',
+  }
 ]
 // menu data 2
 export const menu_data_2 = [

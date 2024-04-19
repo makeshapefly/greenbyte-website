@@ -27,7 +27,7 @@ const OffCanvas = ({setIsSidebarOpen,data_1=false,data_2=false,data_3=false}) =>
           </div>
           <div className="nav-logo">
             <Link to="/" className="light-logo">
-              <img src="/assets/img/logo/nerko-light.svg" alt="Nerko" />
+              <img src="/assets/img/logo/logo1_2.svg" alt="GreenByte" />
             </Link>
             <Link to="/" className="dark-logo">
               <img src="/assets/img/logo/nerko-dark.svg" alt="Nerko" />

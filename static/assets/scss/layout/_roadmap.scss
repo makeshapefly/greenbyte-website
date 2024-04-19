@@ -129,6 +129,7 @@
             @include border-radius(20px);
         }
         & p {
+            padding-top: 20px;
             font-size: 20px;
             line-height: 1.45;
             margin: 0 0;
@@ -180,18 +181,20 @@
             }
         }
     }
+    &__icon {
+        width:60%
+    }
     &__percent {
         position: absolute;
         top: 0;
         right: 0;
-        width: 50px;
-        height: 50px;
+        width: 90px;
+        height: 90px;
         @include flex-center();
         flex-direction: column;
         padding-top: 2px;
         line-height: .9;
         @include border-radius(50%);
-        @include transform(rotate(16deg));
         background-color: var(--tg-gradient-1);
         background-image: linear-gradient(25deg, var(--tg-gradient-1), var(--tg-gradient-2));
         color: var(--tg-common-color-white);

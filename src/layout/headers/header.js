@@ -53,10 +53,10 @@ const Header = ({ blog_page }) => {
                 <nav className="tgmenu__nav">
                   <div className="logo">
                     <Link to="/" className="light-logo">
-                      <img src="/assets/img/logo/nerko-light.svg" alt="Nerko" />
+                      <img src="/assets/img/logo/logo3.svg" alt="GreenByte" style={{maxWidth:'200px'}} />
                     </Link>
                     <Link to="/" className="dark-logo">
-                      <img src="/assets/img/logo/nerko-dark.svg" alt="Nerko" />
+                      <img src="/assets/img/logo/logo3.svg" alt="GreenByte" style={{maxWidth:'200px'}} />
                     </Link>
                   </div>
                   <div className="tgmenu__navbar-wrap tgmenu__main-menu d-none d-lg-flex">
@@ -127,35 +127,6 @@ const Header = ({ blog_page }) => {
                       ))}
                     </ul>
                   </div>
-                  <div className="tgmenu__action">
-                    <ul className="list-wrap">
-                      <li className="header-social">
-                        <a href="#" className="d-none d-sm-block">
-                          <i className="fab fa-twitter"></i>
-                        </a>
-                        <a href="#">
-                          <i className="fab fa-discord"></i>
-                        </a>
-                        <a
-                          href="#"
-                          className="d-blcok d-xl-none"
-                          data-bs-toggle="modal"
-                          data-bs-target="#connectModal"
-                        >
-                          <i className="fas fa-wallet"></i>
-                        </a>
-                      </li>
-                      <li className="header-btn">
-                        <button
-                          className="btn border-btn"
-                          data-bs-toggle="modal"
-                          data-bs-target="#connectModal"
-                        >
-                          Connect wallet
-                        </button>
-                      </li>
-                    </ul>
-                  </div>
                 </nav>
               </div>
 
@@ -168,7 +139,6 @@ const Header = ({ blog_page }) => {
       </div>
 
       {/* <!-- Connect Wallet Modal --> */}
-      <ConnectModal />
       {/* <!-- Connect Wallet Modal --> */}
     </header>
   )

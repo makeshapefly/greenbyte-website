@@ -8,35 +8,23 @@ import SectionDivider from "../components/section-divider"
 import FactArea from "../components/fact-area/fact-area"
 import AboutArea from "../components/about/about-area"
 import CollectionArea from "../components/collections/collection-area"
-import RoadMapArea from '../components/roadmap-area/roadmap-area';
 import TeamArea from '../components/teams/team-area';
 import FaqArea from '../components/faqs/faq-area';
 import CtaArea from '../components/cta/cta-area';
 import GradientPosition from '../components/gradient-position';
+import RoadMapAreaTwo from '../components/roadmap-area/roadmap-area-2';
 
 const HomePage = () => {
   return (
     <Layout>
       <GradientPosition/>
       <HeroArea />
-      <HomeBrands />
-      <SectionDivider />
-      <MintArea />
-      <SectionDivider />
-      <FactArea />
-      <SectionDivider />
       <AboutArea />
-      <SectionDivider />
-      <CollectionArea />
-      <SectionDivider />
-      <RoadMapArea/>
-      <SectionDivider />
+      <RoadMapAreaTwo/>
       <TeamArea/>
-      <SectionDivider />
+      <HomeBrands />
       <FaqArea/>
-      <SectionDivider />
       <CtaArea/>
-      <SectionDivider />
     </Layout>
   )
 }

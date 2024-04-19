@@ -49,35 +49,28 @@ const slider_data = [
   {
     id: 2,
     percent: "25",
-    title: "Production",
+    title: "calculate",
     desc: "Quality comes first. we took our time to plan out everything and build our production pipeline for a good quality artworks.",
     lists: ["Release website and logo", "Grow community", "Launch the project"],
   },
   {
     id: 3,
     percent: "50",
-    title: "Launch",
+    title: "Reduce",
     desc: "Quality comes first. we took our time to plan out everything and build our production pipeline for a good quality artworks.",
     lists: ["Release website and logo", "Grow community", "Launch the project"],
   },
   {
     id: 4,
     percent: "75",
-    title: "Minting",
+    title: "Offset",
     desc: "Quality comes first. we took our time to plan out everything and build our production pipeline for a good quality artworks.",
     lists: ["Release website and logo", "Grow community", "Launch the project"],
   },
   {
     id: 5,
-    percent: "95",
-    title: "New Nfts",
-    desc: "Quality comes first. we took our time to plan out everything and build our production pipeline for a good quality artworks.",
-    lists: ["Release website and logo", "Grow community", "Launch the project"],
-  },
-  {
-    id: 6,
     percent: "100",
-    title: "Metaverse",
+    title: "Adapt",
     desc: "Quality comes first. we took our time to plan out everything and build our production pipeline for a good quality artworks.",
     lists: ["Release website and logo", "Grow community", "Launch the project"],
   },
@@ -85,7 +78,7 @@ const slider_data = [
 
 const RoadMapArea = () => {
   return (
-    <section id="roadmap" className="roadmap-area section-pt-60 section-pb-60">
+    <section id="netZero" className="roadmap-area section-pt-60 section-pb-60">
       <div className="container">
         <div
           className="row justify-content-center"
@@ -93,7 +86,7 @@ const RoadMapArea = () => {
         >
           <div className="col-xl-8 col-lg-10">
             <div className="section__title text-center title-mb-75">
-              <h2 className="title">Nerko's Roadmap</h2>
+              <h2 className="title">NetZero Pathway</h2>
             </div>
           </div>
         </div>
