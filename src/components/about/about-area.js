@@ -60,7 +60,7 @@ const AboutArea = () => {
                 className="about__img"
                 data-anime="opacity:[0, 1]; translateX:[24, 0]; onview: -250; delay: 300;"
               >
-                <img src="/assets/img/others/image.png" alt="img" />
+                <img src="/assets/img/others/about-img1.jpg" alt="img" />
               </div>
             </div>
             <div className="col-lg-6">

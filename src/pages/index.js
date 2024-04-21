@@ -13,6 +13,7 @@ import FaqArea from '../components/faqs/faq-area';
 import CtaArea from '../components/cta/cta-area';
 import GradientPosition from '../components/gradient-position';
 import RoadMapArea from '../components/roadmap-area/roadmap-area';
+import ChoseAreaTwo from "../components/why-chose/chose-area-2";
 
 const HomePage = () => {
   return (
@@ -21,6 +22,7 @@ const HomePage = () => {
       <HeroArea />
       <SectionDivider/>
       <AboutArea />
+      <ChoseAreaTwo/>
       <SectionDivider/>
       <RoadMapArea/>
       <SectionDivider/>

@@ -28,6 +28,20 @@ const HeroArea = () => {
                 className="banner__content"
                 data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;"
               >
+                 <img
+                  src="/assets/img/objects/circle.png"
+                  width="16"
+                  alt="object"
+                  style={{ top: "14%", left: "-12%" }}
+                  ref={animate_3}
+                />
+                  <img
+                  src="/assets/img/objects/circle-03.png"
+                  width="24"
+                  alt="object"
+                  style={{ bottom: "-30%", left: "12%" }}
+                  ref={animate_4}
+                />
                 <h2 className="title">Net zero technologists</h2>
                 <p className="desc">
                 People, data and technology combined = Positive Outcomes for the Planet
