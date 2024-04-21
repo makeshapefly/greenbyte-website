@@ -53,10 +53,10 @@ const Header = ({ blog_page }) => {
                 <nav className="tgmenu__nav">
                   <div className="logo">
                     <Link to="/" className="light-logo">
-                      <img src="/assets/img/logo/logo3.svg" alt="GreenByte" style={{maxWidth:'200px'}} />
+                      <img src="/assets/img/logo/Greenbyte_logo.svg" alt="GreenByte" style={{maxWidth:'200px'}} />
                     </Link>
                     <Link to="/" className="dark-logo">
-                      <img src="/assets/img/logo/logo3.svg" alt="GreenByte" style={{maxWidth:'200px'}} />
+                      <img src="/assets/img/logo/Greenbyte_logo.svg" alt="GreenByte" style={{maxWidth:'200px'}} />
                     </Link>
                   </div>
                   <div className="tgmenu__navbar-wrap tgmenu__main-menu d-none d-lg-flex">

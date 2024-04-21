@@ -12,18 +12,23 @@ import TeamArea from '../components/teams/team-area';
 import FaqArea from '../components/faqs/faq-area';
 import CtaArea from '../components/cta/cta-area';
 import GradientPosition from '../components/gradient-position';
-import RoadMapAreaTwo from '../components/roadmap-area/roadmap-area-2';
+import RoadMapArea from '../components/roadmap-area/roadmap-area';
 
 const HomePage = () => {
   return (
     <Layout>
       <GradientPosition/>
       <HeroArea />
+      <SectionDivider/>
       <AboutArea />
-      <RoadMapAreaTwo/>
+      <SectionDivider/>
+      <RoadMapArea/>
+      <SectionDivider/>
       <TeamArea/>
       <HomeBrands />
+      <SectionDivider/>
       <FaqArea/>
+      <SectionDivider/>
       <CtaArea/>
     </Layout>
   )

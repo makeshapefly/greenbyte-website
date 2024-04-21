@@ -8,7 +8,7 @@
 }
 .roadmap {
     &__wrapper {
-        max-width: 368px;
+        max-width: 800px;
         margin: 0 auto;
         position: relative;
         & .tg-swiper-next,
@@ -37,6 +37,11 @@
                 left: 15px;
             }
         }
+        & .tg-swiper-prev:hover {
+            background-image: linear-gradient(25deg, var(--tg-gradient-1), var(--tg-gradient-2));
+            background-color: #0c7264;
+            color:#fff;
+         }
         & .tg-swiper-next {
             right: 0;
             left: auto;
@@ -45,6 +50,11 @@
                 right: 15px;
                 left: auto;
             }
+        }
+        & .tg-swiper-next:hover {
+            background-image: linear-gradient(25deg, var(--tg-gradient-1), var(--tg-gradient-2));
+           background-color: #0c7264;
+           color:#fff;
         }
         & .tg-swiper-scrollbar {
             position: relative;
@@ -120,6 +130,23 @@
         margin: -16px;
         overflow: visible;
     }
+    
+    &__hover::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: #e5ebd5;
+        transition: height 0.3s ease;
+        border-radius: 32px;
+    }
+    
+    &__hover:hover::before {
+        height: 100%;
+    }
+    
     &__card {
         position: relative;
         @include border-radius(32px);
@@ -185,7 +212,6 @@
         width:60%
     }
     &__percent {
-        position: absolute;
         top: 0;
         right: 0;
         width: 90px;

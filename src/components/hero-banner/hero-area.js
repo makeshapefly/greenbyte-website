@@ -32,22 +32,50 @@ const HeroArea = () => {
                 <p className="desc">
                 People, data and technology combined = Positive Outcomes for the Planet
                 </p>
-                {/* <a
-                  href="https://opensea.io/"
-                  target="_blank"
-                  className="banner__btn btn gradient-btn"
-                >
-                  <span>View in OPENSEA</span>{" "}
-                  <i className="unicon-arrow-right"></i>
-                </a> */}
               </div>
             </div>
             <div className="col-lg-6">
-              
             <div className="banner__images-grid">
+            <div
+              className="banner__images-two"
+              data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 200;"
+              >
+                <img
+                  className="shape-one"
+                  width="40"
+                  src="/assets/img/objects/circle-01.svg"
+                  alt="object"
+                  style={{ top: '-8%',right:"40%"}}
+                  data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 400;"
+                />
+                <img
+                  className="shape-two"
+                  width="64"
+                  src="/assets/img/objects/star-05.svg"
+                  alt="object"
+                  style={{right:"0%"}}
+                  data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 400;"
+                />
+                <img
+                  className="shape-four"
+                  width="40"
+                  src="/assets/img/objects/circle-02.svg"
+                  alt="object"
+                  style={{ bottom: '0%',left:"-15%"}}
+                  data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 400;"
+                />
+                <img
+                  className="shape-five"
+                  width="64"
+                  src="/assets/img/objects/start-04.svg"
+                  alt="object"
+                  style={{ bottom: '24%',left:"-10%"}}
+                  data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 400;"
+                />
                   <div className="left">
                     <img src="/assets/img/artwork/Himg-bgremoved.png" alt="artwork" />
                   </div>
+                </div>
                 </div>
             </div>
           </div>
