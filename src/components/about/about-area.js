@@ -10,7 +10,7 @@ const AboutArea = () => {
         >
           <div className="col-xl-8 col-lg-10">
             <div className="section__title text-center title-mb-80">
-              <h2 className="title">About the platform</h2>
+              <h2 className="title">About Us</h2>
             </div>
           </div>
         </div>
@@ -21,7 +21,7 @@ const AboutArea = () => {
                 className="about__img"
                 data-anime="opacity:[0, 1]; translateX:[-24, 0]; onview: -250; delay: 200;"
               >
-                <img src="/assets/img/others/features-03.png" alt="img" />
+                <img src="/assets/img/others/image.png" alt="img" />
               </div>
             </div>
             <div className="col-lg-6">
@@ -30,29 +30,27 @@ const AboutArea = () => {
                 data-anime="opacity:[0, 1]; translateX:[24, 0]; onview: -250; delay: 300;"
               >
                 <div className="section__title text-start">
-                  <span className="sub-title tg-text-gradient">
-                    Create and Invest
-                  </span>
-                  <h2 className="title">
-                    Create your <br /> own NFT
-                  </h2>
+                  <h1 className="sub-title tg-text-gradient">
+                    Who We Are
+                  </h1>
                 </div>
                 <p>
-                  Multiple Chains, One Home. Stack up all your NFTs from across
-                  blockchains.
+                We are a team of carbon reduction consultants, software and data engineers, and community activists engaged in a broad range of initiatives to lower harmful emissions and build sustainable local communities.
                 </p>
-                <div className="about__facts-list">
-                  <div className="about__fact-item">
-                    <h3 className="count">4,500+</h3>
-                    <p>
-                      Collections Indexed <br /> every 5mins.
-                    </p>
-                  </div>
-                  <div className="about__fact-item">
-                    <h3 className="count">2.5x</h3>
-                    <p>Difference in Floor & Estimated NFT Value</p>
-                  </div>
-                </div>
+                <ul className="list-unstyled">
+                <li className="list-item">
+                  <i className="check-icon">&#10003;</i> 
+                  Technology that is accessible to communities and facilitates change
+                </li>
+                <li className="list-item">
+                  <i className="check-icon">&#10003;</i>
+                  Data that informs the decision making process
+                </li>
+                <li className="list-item">
+                  <i className="check-icon">&#10003;</i>
+                  Physical infrastructure that solves today's problems
+                </li>
+              </ul>
               </div>
             </div>
           </div>
@@ -62,7 +60,7 @@ const AboutArea = () => {
                 className="about__img"
                 data-anime="opacity:[0, 1]; translateX:[24, 0]; onview: -250; delay: 300;"
               >
-                <img src="/assets/img/others/features-02.png" alt="img" />
+                <img src="/assets/img/others/about-img1.jpg" alt="img" />
               </div>
             </div>
             <div className="col-lg-6">
@@ -71,28 +69,34 @@ const AboutArea = () => {
                 data-anime="opacity:[0, 1]; translateX:[-24, 0]; onview: -250; delay: 400;"
               >
                 <div className="section__title text-start">
-                  <span className="sub-title tg-text-gradient">
-                    Sync and Track
-                  </span>
-                  <h2 className="title">Multiple Chains, One Home</h2>
+                  <h1 className="sub-title tg-text-gradient">
+                   What We Do
+                  </h1>
+                  {/* <h2 className="title">What we do</h2> */}
                 </div>
                 <p>
-                  We make it easy to Discover, Invest and manage all your NFTs
-                  at one place, looked up one of the more obscure.Find the right
-                  NFT collections to buy within the platform.
+                We help clients achieve the best business outcomes in their ongoing digital transformation journey, with a pragmatic approach, and the right technology.<br/><br/>
+                We bring together the best business strategists and technologists to deliver transformational impact.<br/><br/>
+                Our goal is never change for the sake of it. We work on technology changes that matters, making them more efficient, more effective, and more resilient.
                 </p>
                 <div className="about__facts-list">
                   <div className="about__icon-box">
                     <div className="icon">
                       <i className="unicon-select-02"></i>
                     </div>
-                    <p>Collections Indexed every 5mins.</p>
+                    <h5>Advice</h5>
                   </div>
                   <div className="about__icon-box">
                     <div className="icon">
                       <i className="unicon-select-window"></i>
                     </div>
-                    <p>Difference in Floor & Estimated Value</p>
+                    <h5>Build</h5>
+                  </div>
+                  <div className="about__icon-box">
+                    <div className="icon">
+                      <i className="unicon-select-window"></i>
+                    </div>
+                    <h5>Collabarate</h5>
                   </div>
                 </div>
               </div>

@@ -14,10 +14,8 @@ const ConnectModal = () => {
           <div className="modal-content">
             <div className="modal__wrapper">
               <div className="modal__header">
-                <h2 className="title">Connect Wallet</h2>
-                <button data-bs-dismiss="modal" aria-label="Close">
-                  <i className="flaticon-close-1"></i>
-                </button>
+                <h2 className="title">Connect Us</h2>
+
               </div>
               <div className="modal__body text-center">
                 <p>

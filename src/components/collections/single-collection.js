@@ -10,11 +10,8 @@ const SingleCollection = ({item}) => {
       </div>
       <div className="collection__item-content">
         <h4 className="name">
-          <a href="#">#{item.name}</a>
+          <h4>{item.name}</h4>
         </h4>
-        <span className="author">
-          By <a href="#">{item.author}</a>
-        </span>
       </div>
     </div>
   )

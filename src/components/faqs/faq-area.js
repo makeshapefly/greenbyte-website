@@ -5,41 +5,39 @@ import SingleFaq from "./single-faq";
 const faq_items = [
   {
     id: "One",
-    title: "What is Nerko's NFT Collection?",
+    title: "What is net zero?",
     show: true,
-    desc: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.",
-    desc_2:
-      "Voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.",
+    desc: "Net zero refers to achieving a balance between greenhouse gas (GHG) emissions released and those removed from the atmosphere. This can be achieved through a combination of reducing emissions and increasing carbon sequestration (capturing and storing carbon dioxide).",
     parent: "accordionFaq",
   },
   {
     id: "Two",
-    title: "How we can buy and invest NFT?",
-    desc: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.",
+    title: "What are the benefits of achieving net zero?",
+    desc: "Benefits include improved air quality, reduced health risks, a more sustainable future, and potential cost savings through increased energy efficiency.",
     parent: "accordionFaq",
   },
   {
     id: "Three",
-    title: "Why we should choose Nerko's NFT?",
-    desc: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.",
+    title: "How can our organization/city set a net zero target?",
+    desc: "Conduct a thorough GHG inventory to understand your current emissions. Set ambitious but achievable goals, considering science-based targets from organizations like the Science Based Targets initiative (SBTi).",
     parent: "accordionFaq",
   },
   {
     id: "Four",
-    title: "Where we can buy and sell NFts?",
-    desc: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.",
+    title: "What strategies can help us achieve net zero?",
+    desc: "Strategies include increasing energy efficiency, transitioning to renewable energy sources, implementing sustainable practices in transportation and waste management, and potentially investing in carbon offset projects.",
     parent: "accordionFaq",
   },
   {
     id: "Five",
-    title: "How secure is this token?",
-    desc: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.",
+    title: "What are the biggest challenges in achieving net zero?",
+    desc: "  Challenges include technological limitations, infrastructure upgrades, potential economic impacts of transitioning away from fossil fuels, and ensuring a just transition for workers.",
     parent: "accordionFaq",
   },
   {
     id: "Six",
-    title: "What is your contract address?",
-    desc: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.",
+    title: "How can we engage our stakeholders in the net zero journey?",
+    desc: "Transparency and clear communication are essential. Engage with employees, residents, and investors through open dialogue and educational initiatives.",
     parent: "accordionFaq",
   },
 ]
