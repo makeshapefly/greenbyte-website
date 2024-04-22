@@ -21,9 +21,9 @@
   --tg-common-color-black: #0F051D;
   --tg-body-color: #7B7583;
   --tg-heading-color: #0f051d;
-  --tg-theme-primary: #741ff5;
+  --tg-theme-primary: #0c7264;
   --tg-theme-secondary: #e348ff;
-  --tg-gradient-1: #2600fc;
+  --tg-gradient-1: #0c7264;
   --tg-gradient-2: #ff00ea;
   --tg-border-1: #e5e5e5;
   --tg-border-2: rgba(131, 131, 131, 0.25);
@@ -833,7 +833,7 @@ input[type=color] {
 }
 .nav-logo img,
 .logo img {
-  max-width: 120px;
+  max-width: 200px !important;
   -webkit-transition: all 0s ease-out 0s;
   -moz-transition: all 0s ease-out 0s;
   -ms-transition: all 0s ease-out 0s;
@@ -868,7 +868,7 @@ input[type=color] {
   }
 }
 .sticky-menu .logo img {
-  max-width: 90px;
+  max-width: 150px;
 }
 @media (max-width: 991.98px) {
   .sticky-menu.tg-header__area .mobile-nav-toggler {
@@ -3207,8 +3207,8 @@ input[type=color] {
   position: absolute;
   top: 0;
   right: 0;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;

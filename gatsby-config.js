@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Nerko - NFT Portfolio Gatsby Template`,
-    description: `Nerko is a NFT Portfolio and Landing Gatsby template that can be used to build your own NFT Portfolio page. A best designed NFT blockchain, crypto, crypto art, digital and many more purpose Gatsby Template.`,
+    title: `GreenByte`,
+    description: `Net zero technologists`,
     author: `@r-ichard`,
   },
   plugins: [

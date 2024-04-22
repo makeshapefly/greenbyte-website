@@ -51,6 +51,7 @@
             }
         }
         & .btn {
+            margin-top: 16px;
             font-size: 18px;
             padding: 21px 40px;
             @media #{$xs} {

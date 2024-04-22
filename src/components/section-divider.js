@@ -6,7 +6,7 @@ const SectionDivider = () => {
       className="section-divider"
       data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 100;"
     >
-      <img src="/assets/img/others/divider-01.svg" alt="divider" />
+      <img src="/assets/img/others/divider.svg" alt="divider" />
     </div>
   )
 }

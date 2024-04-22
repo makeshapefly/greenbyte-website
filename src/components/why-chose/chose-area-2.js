@@ -30,9 +30,7 @@ const ChoseAreaTwo = () => {
         >
           <div className="col-xl-8 col-lg-10">
             <div className="section__title text-center title-mb-80">
-              <h2 className="title">
-                Why <span className="tg-text-gradient">choose us?</span>
-              </h2>
+              <h1 className="section__title tg-text-gradient">WHY CHOOSE US?</h1>
             </div>
           </div>
         </div>
@@ -42,51 +40,51 @@ const ChoseAreaTwo = () => {
             data-anime="targets: > * > *; opacity:[0, 1]; translateY:[48, 0]; onview: -400; delay: anime.stagger(100);"
           >
             <SingleChoseItem
-              icon="unicon-layers"
+              icon="unicon-chart-line-data"
               title={
                 <>
-                  Huge <br /> collection
+                  Data-Driven <br /> Solutions
                 </>
               }
-              desc="A collection of 890 unique Nerkos built to go beyond the digital space."
+              desc="Our data engineers translate complex environmental issues into clear insights, guiding impactful initiatives for a sustainable future."
             />
             <SingleChoseItem
               icon="unicon-checkmark-outline"
               title={
                 <>
-                  High <br /> quality
+                  Accessible Technology for Change
                 </>
               }
-              desc="The nerko’s collection includes dozens of rare costumes ands colorways of artist's."
-            />
-            <SingleChoseItem
-              icon="unicon-task-approved"
-              title={
-                <>
-                  Top <br /> resource
-                </>
-              }
-              desc="Tasty design resources made with care for each pixel. NFTs and game resources."
+              desc="We create user-friendly tech so everyone can take part in building a sustainable future through accessible tools."
             />
             <SingleChoseItem
               icon="unicon-collaborate"
               title={
                 <>
-                  Big <br /> community
+                  Collaborative Community Engagement
                 </>
               }
-              desc="Be part of a community of nerko owners and create user generated items."
+              desc="We partner with communities, not just offer solutions. Together, we build a sustainable future through collaboration and empowered local voices."
+            />
+            <SingleChoseItem
+              icon="unicon-building"
+              title={
+                <>
+                  Building for Today and Tomorrow
+                </>
+              }
+              desc="We combine expertise with action, developing real-world solutions that tackle climate change today. Partner with us to make a tangible difference."
             />
           </div>
           <img
-            src="/assets/img/objects/circle-01.png"
+            src="/assets/img/objects/circle.png"
             className="top-left"
             width="16"
             alt="Object"
             style={{ top: "-16%", left: "8%" }}
           />
           <img
-            src="/assets/img/objects/circle-02.png"
+            src="/assets/img/objects/circle-03.png"
             className="bottom-right"
             width="24"
             alt="Object"

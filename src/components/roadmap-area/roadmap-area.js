@@ -5,26 +5,26 @@ import { Pagination, Navigation } from "swiper"
 // sliderSetting
 const sliderSetting = {
   // Optional parameters
-  slidesPerView: 1,
+  slidesPerView: 2,
   spaceBetween: 32,
   breakpoints: {
     1500: {
-      slidesPerView: 1,
+      slidesPerView: 2,
     },
     1200: {
-      slidesPerView: 1,
+      slidesPerView: 2,
     },
     992: {
-      slidesPerView: 1,
+      slidesPerView: 2,
     },
     768: {
-      slidesPerView: 1,
+      slidesPerView: 2,
     },
     576: {
-      slidesPerView: 1,
+      slidesPerView: 2,
     },
     0: {
-      slidesPerView: 1,
+      slidesPerView: 2,
     },
   },
   pagination: {
@@ -41,51 +41,51 @@ const sliderSetting = {
 const slider_data = [
   {
     id: 1,
-    percent: "0",
-    title: "Planning",
-    desc: "Quality comes first. we took our time to plan out everything and build our production pipeline for a good quality artworks.",
-    lists: ["Release website and logo", "Grow community", "Launch the project"],
+    icon: <img src="/icons/analysis.png" style={{width:'60px'}}/>,
+    title: "Calculate",
+    desc: "This phase involves the initial assessment and computation of relevant data to establish a baseline for the net-zero pathway.",
+    lists: ["Analyze data and trends", "Inventory greenhouse gases", "Establish a baseline"],
   },
   {
     id: 2,
-    percent: "25",
-    title: "Production",
-    desc: "Quality comes first. we took our time to plan out everything and build our production pipeline for a good quality artworks.",
-    lists: ["Release website and logo", "Grow community", "Launch the project"],
+    icon: <img src="/icons/goals.png" style={{width:'60px'}}/>,
+    title: "Set Targets",
+    desc: "specific goals and targets are defined based on the calculated data, providing a clear direction for the journey towards net-zero emissions.",
+    lists: ["Short & Long Term Goals", "Track Progress Metrics", "Sector-Specific Targets"],
   },
   {
     id: 3,
-    percent: "50",
-    title: "Launch",
-    desc: "Quality comes first. we took our time to plan out everything and build our production pipeline for a good quality artworks.",
-    lists: ["Release website and logo", "Grow community", "Launch the project"],
+    icon: <img src="/icons/reduce.png" style={{width:'60px'}}/>,
+    title: "Reduce",
+    desc: "This phase focuses on implementing strategies and initiatives to reduce carbon emissions and overall environmental impact.",
+    lists: ["Energy Efficiency Upgrades", "Sustainable Practices", "Reduce Waste & Emissions"],
   },
   {
     id: 4,
-    percent: "75",
-    title: "Minting",
-    desc: "Quality comes first. we took our time to plan out everything and build our production pipeline for a good quality artworks.",
-    lists: ["Release website and logo", "Grow community", "Launch the project"],
+    icon: <img src="/icons/offset.png" style={{width:'60px'}}/>,
+    title: "Offset",
+    desc: "After implementing reduction strategies, assess any remaining unavoidable emissions.Invest in high-quality carbon offset programs that remove greenhouse gases from the atmosphere.Focus should remain on prioritizing reductions over offsets.",
+    lists: ["Offset Remaining Emissions", "Invest in Carbon Projects"],
   },
   {
     id: 5,
-    percent: "95",
-    title: "New Nfts",
-    desc: "Quality comes first. we took our time to plan out everything and build our production pipeline for a good quality artworks.",
-    lists: ["Release website and logo", "Grow community", "Launch the project"],
+    icon: <img src="/icons/collaboration.png" style={{width:'60px'}}/>,
+    title: "Innovation and Collaboration",
+    desc: "This phase emphasizes the importance of innovation and collaboration in finding sustainable solutions and engaging stakeholders to drive positive change.",
+    lists: ["Develop Sustainable Solutions", "Partner for Change", "Drive Stakeholder Engagement"],
   },
   {
     id: 6,
-    percent: "100",
-    title: "Metaverse",
-    desc: "Quality comes first. we took our time to plan out everything and build our production pipeline for a good quality artworks.",
-    lists: ["Release website and logo", "Grow community", "Launch the project"],
+    icon: <img src="/icons/communication.png" style={{width:'60px'}}/>,
+    title: "Transparency and Communication",
+    desc: "Crucial for sharing progress, challenges, and successes of the net-zero pathway with stakeholders, fostering trust and accountability in the process.",
+    lists: ["Share Progress & Challenges", "Report & Engage Stakeholders", "Foster Transparency & Trust"],
   },
 ]
 
 const RoadMapArea = () => {
   return (
-    <section id="roadmap" className="roadmap-area section-pt-60 section-pb-60">
+    <section id="netZero" className="roadmap-area section-pt-60 section-pb-60">
       <div className="container">
         <div
           className="row justify-content-center"
@@ -93,7 +93,7 @@ const RoadMapArea = () => {
         >
           <div className="col-xl-8 col-lg-10">
             <div className="section__title text-center title-mb-75">
-              <h2 className="title">Nerko's Roadmap</h2>
+              <h2 className="title">NetZero Pathway</h2>
             </div>
           </div>
         </div>
@@ -111,16 +111,15 @@ const RoadMapArea = () => {
               {slider_data.map(item => {
                 return (
                   <SwiperSlide key={item.id}>
+                    <div className="roadmap__hover">
                   <div className="roadmap__card">
-                    <div className="roadmap__percent">
-                      <span>{item.percent}</span>%
-                    </div>
-                    <div className="roadmap__step">
-                      <span className="tg-text-gradient d-inline-flex">
-                        Phase 0{item.id}
-                      </span>
+                    <div style={{display:'flex', alignItems:'center', flexDirection: 'column'}}>
+                    <div className="roadmap__percent ">
+                      {item.icon}
+                    
                     </div>
                     <h3 className="roadmap__heading">{item.title}</h3>
+                    </div>
                     <p>
                       {item.desc}
                     </p>
@@ -132,6 +131,7 @@ const RoadMapArea = () => {
                       </li>
                       ))}
                     </ul>
+                  </div>
                   </div>
                 </SwiperSlide>
                 )

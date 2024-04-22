@@ -52,7 +52,7 @@ const HeaderTwo = () => {
                     <div className="logo">
                       <Link to="/" className="light-logo">
                         <img
-                          src="/assets/img/logo/nerko-light.svg"
+                          src="/assets/img/logo/logo1_2.svg"
                           alt="Nerko"
                         />
                       </Link>
