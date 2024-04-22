@@ -52,13 +52,13 @@ const HeaderTwo = () => {
                     <div className="logo">
                       <Link to="/" className="light-logo">
                         <img
-                          src="/assets/img/logo/logo1_2.svg"
+                          src="/assets/img/logo/Greenbyte_logo.svg"
                           alt="Nerko"
                         />
                       </Link>
                       <Link to="/" className="dark-logo">
                         <img
-                          src="/assets/img/logo/nerko-dark.svg"
+                          src="/assets/img/logo/Greenbyte_logo.svg"
                           alt="Nerko"
                         />
                       </Link>

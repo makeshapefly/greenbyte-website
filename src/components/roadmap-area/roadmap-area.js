@@ -5,26 +5,26 @@ import { Pagination, Navigation } from "swiper"
 // sliderSetting
 const sliderSetting = {
   // Optional parameters
-  slidesPerView: 2,
+  slidesPerView: 3,
   spaceBetween: 32,
   breakpoints: {
     1500: {
-      slidesPerView: 2,
+      slidesPerView: 3,
     },
     1200: {
-      slidesPerView: 2,
+      slidesPerView: 3,
     },
     992: {
-      slidesPerView: 2,
+      slidesPerView: 3,
     },
     768: {
       slidesPerView: 2,
     },
     576: {
-      slidesPerView: 2,
+      slidesPerView: 1,
     },
     0: {
-      slidesPerView: 2,
+      slidesPerView: 1,
     },
   },
   pagination: {
@@ -41,48 +41,47 @@ const sliderSetting = {
 const slider_data = [
   {
     id: 1,
-    icon: <img src="/icons/analysis.png" style={{width:'60px'}}/>,
+    icon: <img src="/icons/analysis.png" style={{ width: '60px' }} />,
     title: "Calculate",
-    desc: "This phase involves the initial assessment and computation of relevant data to establish a baseline for the net-zero pathway.",
+    desc: "This initial phase involves assessing and calculating relevant data to establish a baseline for the net-zero pathway.",
     lists: ["Analyze data and trends", "Inventory greenhouse gases", "Establish a baseline"],
   },
   {
     id: 2,
-    icon: <img src="/icons/goals.png" style={{width:'60px'}}/>,
+    icon: <img src="/icons/goals.png" style={{ width: '60px' }} />,
     title: "Set Targets",
-    desc: "specific goals and targets are defined based on the calculated data, providing a clear direction for the journey towards net-zero emissions.",
+    desc: "Using calculated data, define specific goals and targets to provide a clear roadmap for achieving net-zero emissions.",
     lists: ["Short & Long Term Goals", "Track Progress Metrics", "Sector-Specific Targets"],
   },
   {
     id: 3,
-    icon: <img src="/icons/reduce.png" style={{width:'60px'}}/>,
+    icon: <img src="/icons/reduce.png" style={{ width: '60px' }} />,
     title: "Reduce",
-    desc: "This phase focuses on implementing strategies and initiatives to reduce carbon emissions and overall environmental impact.",
+    desc: "This phase focuses on implementing strategies to reduce carbon emissions and environmental impact.",
     lists: ["Energy Efficiency Upgrades", "Sustainable Practices", "Reduce Waste & Emissions"],
   },
   {
     id: 4,
-    icon: <img src="/icons/offset.png" style={{width:'60px'}}/>,
+    icon: <img src="/icons/offset.png" style={{ width: '60px' }} />,
     title: "Offset",
-    desc: "After implementing reduction strategies, assess any remaining unavoidable emissions.Invest in high-quality carbon offset programs that remove greenhouse gases from the atmosphere.Focus should remain on prioritizing reductions over offsets.",
-    lists: ["Offset Remaining Emissions", "Invest in Carbon Projects"],
+    desc: "After reduction, assess remaining emissions. Invest in high-quality carbon offsets while prioritizing reduction efforts.",
+    lists: ["Offset Remaining Emissions", "Prioritize Reduction First", "Invest in Carbon Projects"],
   },
   {
     id: 5,
-    icon: <img src="/icons/collaboration.png" style={{width:'60px'}}/>,
+    icon: <img src="/icons/collaboration.png" style={{ width: '60px' }} />,
     title: "Innovation and Collaboration",
-    desc: "This phase emphasizes the importance of innovation and collaboration in finding sustainable solutions and engaging stakeholders to drive positive change.",
+    desc: "This phase emphasizes developing sustainable solutions and partnering with stakeholders to drive positive change.",
     lists: ["Develop Sustainable Solutions", "Partner for Change", "Drive Stakeholder Engagement"],
   },
   {
     id: 6,
-    icon: <img src="/icons/communication.png" style={{width:'60px'}}/>,
+    icon: <img src="/icons/communication.png" style={{ width: '60px' }} />,
     title: "Transparency and Communication",
-    desc: "Crucial for sharing progress, challenges, and successes of the net-zero pathway with stakeholders, fostering trust and accountability in the process.",
+    desc: "Share progress, challenges, and successes with stakeholders to build trust and accountability throughout the net-zero journey.",
     lists: ["Share Progress & Challenges", "Report & Engage Stakeholders", "Foster Transparency & Trust"],
   },
-]
-
+];
 const RoadMapArea = () => {
   return (
     <section id="netZero" className="roadmap-area section-pt-60 section-pb-60">

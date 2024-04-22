@@ -2,10 +2,10 @@ const team_data = [
   {
     id:1,
     img:'/assets/img/team/12.jpg',
-    name:'Tony',
-    designation:'Director of Engineering',
+    name:'Tony Turner',
+    designation:'CTO',
     social_links: [
-      { link: 'http://linkedin.com', icon: 'fab fa-linkedin', name: 'LinkedIn' },
+      { link: 'https://www.linkedin.com/in/turner2448/', icon: 'fab fa-linkedin', name: 'LinkedIn' },
     ],
   },
   {
@@ -14,7 +14,7 @@ const team_data = [
     name:'Dawood',
     designation:'Director of Engineering',
     social_links: [
-      { link: 'http://linkedin.com', icon: 'fab fa-linkedin', name: 'LinkedIn' },
+      { link: 'https://www.linkedin.com/in/dawood-abdullah-mohammed-72687519/', icon: 'fab fa-linkedin', name: 'LinkedIn' },
     ],
   },
   {
@@ -23,25 +23,70 @@ const team_data = [
     name:'Nitesh',
     designation:'Technical Architect',
     social_links: [
-      { link: 'http://linkedin.com', icon: 'fab fa-linkedin', name: 'LinkedIn' },
+      { link: 'https://www.linkedin.com/in/niteshkhandelwal/', icon: 'fab fa-linkedin', name: 'LinkedIn' },
     ],
   },
   {
     id:4,
     img:'/assets/img/team/13.jpg',
-    name:'Rashid',
-    designation:'UI/Frontend Lead',
+    name:'Rashid Ali',
+    designation:'Principal Engineer',
     social_links: [
-      { link: 'http://linkedin.com', icon: 'fab fa-linkedin', name: 'LinkedIn' },
+      { link: 'https://www.linkedin.com/in/rashidtruba/', icon: 'fab fa-linkedin', name: 'LinkedIn' },
     ],
   },
   {
     id:5,
     img:'/assets/img/team/14.png',
     name:'Sai Teja',
-    designation:'Associate',
+    designation:'Scrum Lead',
     social_links: [
-      { link: 'http://linkedin.com', icon: 'fab fa-linkedin', name: 'LinkedIn' },
+      { link: 'https://www.linkedin.com/in/saitejagurajala/', icon: 'fab fa-linkedin', name: 'LinkedIn' },
+    ],
+  },
+  {
+    id:6,
+    img:'/assets/img/team/15.jpg',
+    name:'Sai Vamsi',
+    designation:'DevOps Tech Lead',
+    social_links: [
+      { link: 'https://www.linkedin.com/in/saivamsi9594/', icon: 'fab fa-linkedin', name: 'LinkedIn' },
+    ],
+  },
+  {
+    id:10,
+    img:'/assets/img/team/17.jpg',
+    name:'Arun Kumar',
+    designation:'QA Lead',
+    social_links: [
+      { link: 'https://www.linkedin.com/', icon: 'fab fa-linkedin', name: 'LinkedIn' },
+    ],
+  },
+  {
+    id:7,
+    img:'/assets/img/team/18.jpg',
+    name:'Fatima zahara',
+    designation:'QA / NetZero Analyst',
+    social_links: [
+      { link: 'https://www.linkedin.com/in/fatima-zahara-mohammed-8284a524b/', icon: 'fab fa-linkedin', name: 'LinkedIn' },
+    ],
+  },
+  {
+    id:8,
+    img:'/assets/img/team/16.jpg',
+    name:'Vijaya Kumari',
+    designation:'QA Engineer',
+    social_links: [
+      { link: 'https://www.linkedin.com/in/vijaya-kumari-74796b53/', icon: 'fab fa-linkedin', name: 'LinkedIn' },
+    ],
+  },
+  {
+    id:9,
+    img:'/assets/img/team/20.jpg',
+    name:'Farhath Ayesha',
+    designation:'UI/UX Frontend Developer',
+    social_links: [
+      { link: 'https://www.linkedin.com/in/farhath-ayesha-mohammad-59848724b/', icon: 'fab fa-linkedin', name: 'LinkedIn' },
     ],
   },
 ]
