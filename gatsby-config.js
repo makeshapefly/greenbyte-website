@@ -16,8 +16,16 @@ module.exports = {
     {
       resolve: "gatsby-plugin-anchor-links",
       options: {
-        offset: -70
-      }
-    }
+        offset: -70,
+      },
+    },
+    {
+      resolve: "gatsby-source-blogger",
+      options: {
+        apiKey: "AIzaSyARMfeKc_DcHpof49x0W0XdNjLqXkCu-VU",
+        blogId: "6355049226979332769",
+        downloadImage: true,
+      },
+    },
   ],
-}
+};
