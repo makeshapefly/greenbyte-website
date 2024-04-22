@@ -77,7 +77,7 @@ const AboutArea = () => {
                 <p>
                 We help clients achieve the best business outcomes in their ongoing digital transformation and NetZero journey, with a pragmatic approach, and the right technology.<br/><br/>
                 We bring together the best business strategists and technologists to deliver transformational impact.<br/><br/>
-                Our goal is never change for the sake of it. We work on technology changes that matters, making them more efficient, more effective, and more sustainability.
+                Our goal is never change for the sake of it. We work on technology changes that matters, making them more efficient, more effective, and more sustainable.
                 </p>
                 <div className="about__facts-list">
                   <div className="about__icon-box">
