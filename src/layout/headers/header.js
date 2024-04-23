@@ -46,7 +46,7 @@ const Header = ({ blog_page }) => {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <div onClick={handleClick} className="mobile-nav-toggler">
+              <div onClick={handleClick} className="mobile-nav-toggler" style={{marginTop:'20px'}}>
                 <i className="flaticon-menu-1"></i>
               </div>
               <div className="tgmenu__wrap">

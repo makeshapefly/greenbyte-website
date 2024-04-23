@@ -193,7 +193,7 @@
         @include transition(0s);
     }
 	& img {
-        max-width: 200px;
+        max-width: 100px;
         @include transition(0s);
     }
     & .dark-logo {
@@ -221,7 +221,7 @@
     }
     & .logo {
         & img {
-            max-width: 90px;
+            max-width: 130px !important;
         }
     }
     &.tg-header__area .mobile-nav-toggler {

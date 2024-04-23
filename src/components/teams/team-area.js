@@ -20,7 +20,7 @@ const TeamArea = () => {
           className="team__grid-wrapper"
           data-anime="targets: > *; opacity:[0, 1]; translateY:[24, 0]; onview: -400; delay: anime.stagger(100);"
         >
-          {team_data.slice(0,5).map((item) => (
+          {team_data.slice(0,10).map((item) => (
             <SingleTeam key={item.id} item={item} />
           ))}
         </div>
