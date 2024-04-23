@@ -55,6 +55,7 @@
     }
     &-style-two {
         & .choose__item {
+            min-height: 450px;
             padding: 48px 32px;
             box-shadow: none;
             border: 1px solid rgba(131, 131, 131, 0.25);

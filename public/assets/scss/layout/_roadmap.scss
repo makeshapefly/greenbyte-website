@@ -146,6 +146,7 @@
     }
     
     &__card {
+        min-height: 650px;
         position: relative;
         @include border-radius(32px);
         padding: 32px;
