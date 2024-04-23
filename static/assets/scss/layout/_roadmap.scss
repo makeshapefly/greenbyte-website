@@ -126,7 +126,6 @@
     &__active {
         padding: 16px;
         margin: -16px;
-        overflow: visible;
     }
     
     &__hover::before {
@@ -138,7 +137,7 @@
         height: 0;
         background-color: #e5ebd5;
         transition: height 0.3s ease;
-        border-radius: 32px;
+        border-radius: 20px;
     }
     
     &__hover:hover::before {
@@ -148,7 +147,7 @@
     &__card {
         min-height: 650px;
         position: relative;
-        @include border-radius(32px);
+        @include border-radius(20px);
         padding: 32px;
         @include box-shadow(0 3px 8px -1px rgba(0, 0, 0, 0.08));
         @media #{$xs} {

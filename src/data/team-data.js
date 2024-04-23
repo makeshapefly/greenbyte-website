@@ -10,7 +10,16 @@ const team_data = [
   },
   {
     id:2,
-    img:'/assets/img/team/11.jpg',
+    img:'/assets/img/team/16.jpg',
+    name:'Jo',
+    designation:'Net Zero Analyst',
+    social_links: [
+      { link: 'https://www.linkedin.com/in/josouthernwood/', icon: 'fab fa-linkedin', name: 'LinkedIn' },
+    ],
+  },
+  {
+    id:3,
+    img:'/assets/img/team/21.jpg',
     name:'Dawood',
     designation:'Director of Engineering',
     social_links: [
@@ -18,7 +27,7 @@ const team_data = [
     ],
   },
   {
-    id:3,
+    id:4,
     img:'/assets/img/team/10.jpg',
     name:'Nitesh',
     designation:'Technical Architect',
@@ -27,16 +36,16 @@ const team_data = [
     ],
   },
   {
-    id:4,
+    id:5,
     img:'/assets/img/team/13.jpg',
     name:'Rashid Ali',
-    designation:'Principal Engineer',
+    designation:'UI Architect',
     social_links: [
       { link: 'https://www.linkedin.com/in/rashidtruba/', icon: 'fab fa-linkedin', name: 'LinkedIn' },
     ],
   },
   {
-    id:5,
+    id:6,
     img:'/assets/img/team/14.png',
     name:'Sai Teja',
     designation:'Scrum Lead',
@@ -45,7 +54,7 @@ const team_data = [
     ],
   },
   {
-    id:6,
+    id:7,
     img:'/assets/img/team/15.jpg',
     name:'Sai Vamsi',
     designation:'DevOps Tech Lead',
@@ -54,7 +63,7 @@ const team_data = [
     ],
   },
   {
-    id:10,
+    id:8,
     img:'/assets/img/team/17.jpg',
     name:'Arun Kumar',
     designation:'QA Lead',
@@ -63,26 +72,17 @@ const team_data = [
     ],
   },
   {
-    id:7,
+    id:9,
     img:'/assets/img/team/18.jpg',
     name:'Fatima zahara',
-    designation:'QA / NetZero Analyst',
+    designation:'QA Engineer',
     social_links: [
       { link: 'https://www.linkedin.com/in/fatima-zahara-mohammed-8284a524b/', icon: 'fab fa-linkedin', name: 'LinkedIn' },
     ],
   },
   {
-    id:8,
-    img:'/assets/img/team/16.jpg',
-    name:'Vijaya Kumari',
-    designation:'QA Engineer',
-    social_links: [
-      { link: 'https://www.linkedin.com/in/vijaya-kumari-74796b53/', icon: 'fab fa-linkedin', name: 'LinkedIn' },
-    ],
-  },
-  {
-    id:9,
-    img:'/assets/img/team/20.jpg',
+    id:10,
+    img:'/assets/img/team/19.jpg',
     name:'Farhath Ayesha',
     designation:'UI/UX Frontend Developer',
     social_links: [
