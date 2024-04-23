@@ -26,6 +26,7 @@
         }
     }
     &__item {
+        min-height: 340px;
         padding: 8px;
         @include box-shadow(0 3px 8px -1px rgba(0, 0, 0, 0.08));
         @include border-radius(32px);
@@ -52,6 +53,8 @@
         }
         &-thumb {
             & img {
+                height: 198px;
+                width: 200px;
                 @include border-radius(24px);
                 @media #{$xs} {
                     @include border-radius(12px);
@@ -59,7 +62,7 @@
             }
         }
         &-content {
-            padding: 24px;
+            padding: 20px;
             @media #{$lg} {
                 padding: 24px 15px;
             }
@@ -73,7 +76,7 @@
                 font-size: 18px;
                 line-height: 1;
                 text-transform: capitalize;
-                margin: 0 0 15px;
+                margin: 0 0 8px;
                 @media #{$lg} {
                     font-size: 16px;
                     margin: 0 0 10px;
@@ -103,7 +106,7 @@
         align-items: center;
         justify-content: center;
         gap: 18px;
-        margin: 30px 0 0;
+        margin: 15px 0 0;
         @media #{$lg} {
             margin: 20px 0 0;
         }
