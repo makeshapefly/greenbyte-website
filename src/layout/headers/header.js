@@ -11,13 +11,13 @@ import useSticky from "../../hooks/use-sticky";
 import { menu_data } from "../../data/menu_data";
 
 
-const Header = ({ blog_page }) => {
+const Header = ({ page }) => {
   const { sticky } = useSticky()
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
    let {pathname} = useLocation();
 
   let parentClass = ""
-  if (pathname.startsWith("/blog") || pathname.startsWith("/blog-details")) {
+  if (pathname.startsWith("/blog") || pathname.startsWith("/blog-details") || pathname.startsWith("/carbon-market")) {
     parentClass = "active"
   }
 
@@ -65,7 +65,7 @@ const Header = ({ blog_page }) => {
                         <React.Fragment key={i}>
                           {menu.hasDropdown ? (
                             <li className={`menu-item-has-children`}>
-                              {menu.title !== "Blog" && (
+                              {menu.title !== "Blog" && menu.title !== "Carbon Market" && (
                                 <SinglePageLink
                                   activeClass="active"
                                   to={menu.link}
@@ -78,7 +78,7 @@ const Header = ({ blog_page }) => {
                                   {menu.title}
                                 </SinglePageLink>
                               )}
-                              {menu.title === "Blog" && (
+                              {menu.title === "Blog" &&  menu.title === "Carbon Market" &&(
                                 <Link
                                   className={`${parentClass}`}
                                   to={menu.link}
@@ -101,7 +101,7 @@ const Header = ({ blog_page }) => {
                                 ))}
                               </ul>
                             </li>
-                          ) : blog_page ? (
+                          ) : page ? (
                             <li>
                                <AnchorLink to={`/#${menu.link}`} title={menu.title} />
                               {/* <Link to={`/#${menu.link}`}>
