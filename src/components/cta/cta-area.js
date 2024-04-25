@@ -25,7 +25,7 @@ const CtaArea = () => {
               />
               <h3 className="title">Let's Connect</h3>
               <h4>Get in touch to discuss how we can collaborate on your digital journey.</h4>
-              <a href="mailto:london@appnetwise.com" className="btn gradient-btn">
+              <a href="#" className="btn gradient-btn">
                 Contact Us
               </a>
             </div>

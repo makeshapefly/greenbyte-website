@@ -8,7 +8,7 @@ import BlogArea from '../components/blog/blog-area';
 
 const BlogPage = () => {
   return (
-    <Layout blog_page={true}>
+    <Layout page={true}>
       <GradientPosition/>
       <BlogBg/>
       <Breadcrumb title="Latest Blog"/>

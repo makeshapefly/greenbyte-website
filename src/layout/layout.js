@@ -8,7 +8,7 @@ import { tg_theme_toggler } from "../utils/utils";
 // import Preloader from "../components/preloader";
 import usePreloader from "../hooks/use-preloader";
 
-const Layout = ({ children, blog_page = false }) => {
+const Layout = ({ children, page = false }) => {
   const isLoading = usePreloader();
 
   useEffect(() => {
@@ -27,8 +27,8 @@ const Layout = ({ children, blog_page = false }) => {
         <Preloader />
       ) : ( */}
         <>
-          <Header blog_page={blog_page} />
-          <main id={blog_page ? "" : "home"} className="fix">
+          <Header page={page} />
+          <main id={page ? "" : "home"} className="fix">
             {children}
           </main>
           <Footer />

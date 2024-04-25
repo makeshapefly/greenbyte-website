@@ -9,7 +9,7 @@ import BlogDetailsArea from "../components/blog/blog-details-area";
 const BlogDetailsPage = () => {
   return (
     <div className="single single-post">
-      <Layout blog_page={true}>
+      <Layout page={true}>
         <GradientPosition />
         <BlogBg />
         <Breadcrumb title="Minimal workspace for inspiration" />
