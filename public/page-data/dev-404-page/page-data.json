@@ -1,1 +1,23 @@
-{"componentChunkName":"component---cache-dev-404-page-js","path":"/dev-404-page/","result":{"data":{"allSiteFunction":{"nodes":[]},"allSitePage":{"nodes":[{"path":"/404/"},{"path":"/404.html"},{"path":"/blog-details/"},{"path":"/blog/"},{"path":"/carbon-market/"},{"path":"/home-2/"},{"path":"/home-3/"},{"path":"/"}]}},"pageContext":{}},"staticQueryHashes":["2768773727","63159454"],"slicesMap":{}}
+{
+  "componentChunkName": "component---cache-dev-404-page-js",
+  "path": "/dev-404-page/",
+  "result": {
+    "data": {
+      "allSiteFunction": { "nodes": [] },
+      "allSitePage": {
+        "nodes": [
+          { "path": "/404/" },
+          { "path": "/404.html" },
+          { "path": "/blog-details/" },
+          { "path": "/blog/" },
+          { "path": "/home-2/" },
+          { "path": "/home-3/" },
+          { "path": "/" }
+        ]
+      }
+    },
+    "pageContext": {}
+  },
+  "staticQueryHashes": ["3051875607", "63159454"],
+  "slicesMap": {}
+}

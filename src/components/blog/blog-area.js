@@ -4,39 +4,34 @@ import SingleBlog from "./single-blog";
 import { graphql, useStaticQuery } from "gatsby";
 
 const BlogArea = () => {
-  const blog_data = useStaticQuery(graphql`
+  const mediumData = useStaticQuery(graphql`
     query {
-      allBloggerPost {
+      allMediumPost(sort: { fields: [createdAt], order: DESC }) {
         edges {
           node {
-            slug
             id
             title
-            content
-            published
-            author {
-              id
-              displayName
-              url
-              image {
-                url
+            virtuals {
+              subtitle
+              previewImage {
+                imageId
               }
             }
-            replies {
-              totalItems
-              selfLink
+            author {
+              name
             }
           }
         }
       }
     }
   `);
+  console.log(mediumData);
   return (
     <section className="blog-area">
       <div className="container">
         <div className="row">
           <div className="col-lg-8">
-            {blog_data.allBloggerPost.edges.map((blog) => (
+            {mediumData.allMediumPost.edges.map((blog) => (
               <SingleBlog key={blog.id} blog={blog} />
             ))}
           </div>
