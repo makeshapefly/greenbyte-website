@@ -53,7 +53,7 @@ const CarbonMarketDetails = () => {
                 className="carbonMarket__img"
                 data-anime="opacity:[0, 1]; translateX:[-24, 0]; onview: -250; delay: 200;"
               >
-                <img src="/assets/img/carbonMarket/cc-lifeCycle.png" alt="img" />
+                <img src="/assets/img/carbonMarket/cm-lifecycle.png" alt="img" />
               </div>
             </div>
             <div className="col-lg-6">
