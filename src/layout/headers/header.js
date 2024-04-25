@@ -6,7 +6,6 @@ import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { useLocation } from "@reach/router";
 // internal
 import OffCanvas from "../../components/common/off-canvas";
-import ConnectModal from "../../components/common/modals/connect-modal";
 import useSticky from "../../hooks/use-sticky";
 import { menu_data } from "../../data/menu_data";
 
@@ -104,9 +103,6 @@ const Header = ({ page }) => {
                           ) : page ? (
                             <li>
                                <AnchorLink to={`/#${menu.link}`} title={menu.title} />
-                              {/* <Link to={`/#${menu.link}`}>
-                                {menu.title}
-                              </Link> */}
                             </li>
                           ) : (
                             <li>
@@ -137,9 +133,6 @@ const Header = ({ page }) => {
           </div>
         </div>
       </div>
-
-      {/* <!-- Connect Wallet Modal --> */}
-      {/* <!-- Connect Wallet Modal --> */}
     </header>
   )
 }

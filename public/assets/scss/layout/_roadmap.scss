@@ -139,7 +139,9 @@
         transition: height 0.3s ease;
         border-radius: 20px;
     }
-    
+    [tg-theme=dark] &__hover::before{
+        background-color: #0c7264;
+    }
     &__hover:hover::before {
         height: 100%;
     }
