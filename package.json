@@ -1,5 +1,5 @@
 {
-  "name": "@-nerko/gatsby",
+  "name": "@-greenbyte/gatsby",
   "private": false,
   "description": "nerko gatsby",
   "version": "1.0",
@@ -17,6 +17,8 @@
     "gatsby-plugin-sass": "^6.1.0",
     "gatsby-source-blogger": "^1.3.1",
     "gatsby-source-filesystem": "^5.13.1",
+    "gatsby-source-medium": "^5.13.1",
+    "gatsby-source-medium-feed": "^1.0.6",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.0.0",

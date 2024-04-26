@@ -30,7 +30,7 @@ const OffCanvas = ({setIsSidebarOpen,data_1=false,data_2=false,data_3=false}) =>
               <img src="/assets/img/logo/Greenbyte_logo.svg" alt="GreenByte" />
             </Link>
             <Link to="/" className="dark-logo">
-              <img src="/assets/img/logo/nerko-dark.svg" alt="Nerko" />
+              <img src="/assets/img/logo/Greenbyte_logo.svg" alt="GreenByte" />
             </Link>
           </div>
           <div className="tgmobile__menu-outer">

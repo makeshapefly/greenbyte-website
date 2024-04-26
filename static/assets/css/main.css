@@ -102,7 +102,7 @@ a:focus,
 
 a:hover,
 button:hover {
-  color: var(--tg-theme-secondary);
+  color: var(--tg-theme-primary);
   text-decoration: none;
 }
 

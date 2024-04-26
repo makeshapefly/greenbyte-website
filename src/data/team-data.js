@@ -39,7 +39,7 @@ const team_data = [
     id:5,
     img:'/assets/img/team/13.jpg',
     name:'Rashid Ali',
-    designation:'UI Architect',
+    designation:'Full Stack Software Engineer',
     social_links: [
       { link: 'https://www.linkedin.com/in/rashidtruba/', icon: 'fab fa-linkedin', name: 'LinkedIn' },
     ],
@@ -48,7 +48,7 @@ const team_data = [
     id:6,
     img:'/assets/img/team/14.png',
     name:'Sai Teja',
-    designation:'Scrum Lead',
+    designation:'Scrum Master / PM',
     social_links: [
       { link: 'https://www.linkedin.com/in/saitejagurajala/', icon: 'fab fa-linkedin', name: 'LinkedIn' },
     ],
@@ -66,7 +66,7 @@ const team_data = [
     id:8,
     img:'/assets/img/team/17.jpg',
     name:'Arun Kumar',
-    designation:'QA Lead',
+    designation:'QA Practice Lead',
     social_links: [
       { link: 'https://www.linkedin.com/', icon: 'fab fa-linkedin', name: 'LinkedIn' },
     ],

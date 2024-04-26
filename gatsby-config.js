@@ -27,5 +27,11 @@ module.exports = {
         downloadImage: true,
       },
     },
+    {
+      resolve: "gatsby-source-medium",
+      options: {
+        username: "@greenbyte-london",
+      },
+    },
   ],
 };
