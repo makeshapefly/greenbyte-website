@@ -36,14 +36,11 @@ const BlogArea = () => {
   return (
     <section className="blog-area">
       <div className="container">
-        <div className="row">
+        <div className="row" style={{justifyContent:'center'}}>
           <div className="col-lg-8">
             {mediumData.allMediumPost.edges.map((blog) => (
               <SingleBlog key={blog.id} blog={blog} />
             ))}
-          </div>
-          <div className="col-lg-4">
-            <BlogSidebar />
           </div>
         </div>
       </div>

@@ -17,7 +17,7 @@ const CopyButton = ({ linkToCopy }) => {
 
   return (
     <div>
-      <button onClick={copyToClipboard}>
+      <button  style={{ background: "transparent", border: "none" }} onClick={copyToClipboard}>
         {copySuccess ? "Copied!" : "Copy Link"}
       </button>
     </div>
