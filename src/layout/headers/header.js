@@ -16,7 +16,7 @@ const Header = ({ page }) => {
    let {pathname} = useLocation();
 
   let parentClass = ""
-  if (pathname.startsWith("/blog") || pathname.startsWith("/blog-details") || pathname.startsWith("/carbon-market")) {
+  if (pathname.startsWith("/carbon-market")) {
     parentClass = "active"
   }
 
@@ -64,7 +64,7 @@ const Header = ({ page }) => {
                         <React.Fragment key={i}>
                           {menu.hasDropdown ? (
                             <li className={`menu-item-has-children`}>
-                              {menu.title !== "Blog" && menu.title !== "Carbon Market" && (
+                              {(menu.title !== "Carbon Market") && (
                                 <SinglePageLink
                                   activeClass="active"
                                   to={menu.link}
@@ -77,7 +77,7 @@ const Header = ({ page }) => {
                                   {menu.title}
                                 </SinglePageLink>
                               )}
-                              {menu.title === "Blog" &&  menu.title === "Carbon Market" &&(
+                              {(menu.title === "Carbon Market") &&(
                                 <Link
                                   className={`${parentClass}`}
                                   to={menu.link}
@@ -100,25 +100,39 @@ const Header = ({ page }) => {
                                 ))}
                               </ul>
                             </li>
-                          ) : page ? (
+                          ) : (page && menu.title === "Blog") ? (
+                           
                             <li>
-                               <AnchorLink to={`/#${menu.link}`} title={menu.title} />
+                              <AnchorLink to={`/${menu.link}`} title={menu.title} />
                             </li>
+                          ) : (page) ? (
+                           
+                            <li>
+                              <AnchorLink to={`/#${menu.link}`} title={menu.title} />
+                            </li>
+                       
                           ) : (
                             <li>
-                              <SinglePageLink
-                                activeClass="active"
-                                to={menu.link}
-                                spy={true}
-                                smooth={true}
-                                offset={-70}
-                                duration={500}
-                                className="section-link"
-                              >
-                                {menu.title}
-                              </SinglePageLink>
+                              {menu.title === "Blog" ? (
+                                <Link to={`/${menu.link}`} className="section-link">
+                                  {menu.title}
+                                </Link>
+                              ) : (
+                                <SinglePageLink
+                                  activeClass="active"
+                                  to={menu.link}
+                                  spy={true}
+                                  smooth={true}
+                                  offset={-70}
+                                  duration={500}
+                                  className="section-link"
+                                >
+                                  {menu.title}
+                                </SinglePageLink>
+                              )}
                             </li>
-                          )}
+                          
+                          )} 
                         </React.Fragment>
                       ))}
                     </ul>
