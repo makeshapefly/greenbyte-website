@@ -3,7 +3,6 @@ import relativeTime from "dayjs/plugin/relativeTime";
 
 dayjs.extend(relativeTime);
 export const formatDate = (date) => {
-  console.log(date);
   if (dayjs(date).isValid()) {
     return new Date(date).toLocaleDateString();
   }

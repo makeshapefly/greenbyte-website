@@ -11,21 +11,28 @@ const BlogArea = () => {
           node {
             id
             title
+            content {
+              subtitle
+            }
             virtuals {
               subtitle
               previewImage {
                 imageId
               }
             }
+            createdAt
+            slug
+            medium_id
             author {
               name
+              id
+              username
             }
           }
         }
       }
     }
   `);
-  console.log(mediumData);
   return (
     <section className="blog-area">
       <div className="container">

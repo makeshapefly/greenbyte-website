@@ -30,7 +30,7 @@ module.exports = {
     {
       resolve: "gatsby-source-medium",
       options: {
-        username: "@rashidali_97677",
+        username: "@greenbyte-london",
       },
     },
   ],
