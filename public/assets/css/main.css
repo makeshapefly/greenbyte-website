@@ -4100,7 +4100,7 @@ input[type=color] {
   color: var(--tg-theme-primary);
 }
 .blog-inner-images img, .blog-inner-img img {
-  height: 260px;
+  height: 160px;
   object-fit: cover;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
