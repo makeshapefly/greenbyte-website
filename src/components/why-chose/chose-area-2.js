@@ -30,7 +30,7 @@ const ChoseAreaTwo = () => {
         >
           <div className="col-xl-8 col-lg-10">
             <div className="section__title text-center title-mb-80">
-              <h1 className="section__title tg-text-gradient">WHY CHOOSE US?</h1>
+              <h1 className="section__title tg-text-gradient">WHY WORK WITH US?</h1>
             </div>
           </div>
         </div>

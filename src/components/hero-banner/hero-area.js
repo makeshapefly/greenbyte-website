@@ -42,7 +42,7 @@ const HeroArea = () => {
                   style={{ bottom: "-30%", left: "12%" }}
                   ref={animate_4}
                 />
-                <h2 className="title">Net zero technologists</h2>
+                <h2 className="title" style={{marginTop: 50}}>Net zero technologists</h2>
                 <p className="desc">
                 People, data and technology combined = Positive Outcomes for the Planet
                 </p>

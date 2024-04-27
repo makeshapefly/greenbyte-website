@@ -499,7 +499,7 @@ input[type=color] {
 }
 
 .breadcrumb-area {
-  padding: 180px 0 120px;
+  padding: 180px 0 40px;
 }
 @media (max-width: 1500px) {
   .breadcrumb-area {
@@ -1440,7 +1440,7 @@ input[type=color] {
   opacity: 0.1;
 }
 .banner__content {
-  position: relative;
+  position: relative;;
 }
 @media (max-width: 991.98px) {
   .banner__content {
@@ -1450,7 +1450,7 @@ input[type=color] {
 .banner__content .title {
   font-size: 72px;
   line-height: 1;
-  margin: 0 0 23px;
+  margin: 50px 0 23px;
 }
 @media (max-width: 1500px) {
   .banner__content .title {

@@ -17,10 +17,11 @@ export const menu_data = [
   {
     id: 4,
     hasDropdown:true,
-    title: 'Services',
+    title: 'Projects',
     link: '/carbon-market',
     submenus: [
-      { title: 'Carbon Market' , link:'/carbon-market/'},
+      { title: 'Carbon Markets' , link:'/carbon-market/'},
+      { title: 'Retrofit' , link:'/retrofit/'},
     ]
   },
   {
