@@ -28,18 +28,21 @@ const HeroArea = () => {
                 className="banner__content"
                 data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;"
               >
-                <h2 className="title" style={{ marginTop: 50 }}>Net zero technologists</h2>
+                <h2 className="title" style={{ marginTop: 60 }}>Net zero technologists</h2>
                 <p>
                   <div className="container">
                     <div className="row">
-                      <div className="col-lg-12" style={{fontSize: 24, color: '#000'}}>
-                        people <img src = "/assets/img/retrofit/icons8-sum-50.png" /> 
-                        data <img src = "/assets/img/retrofit/icons8-sum-50.png" />
+                      <div className="col-lg-12" style={{ fontSize: 24, color: '#000' }}>
+                        people <img src="/assets/img/retrofit/icons8-sum-50.png" />
+                        data <img src="/assets/img/retrofit/icons8-sum-50.png" />
                         technology
                       </div>
                     </div>
                   </div>
                 </p>
+                <div style={{marginTop: 50}}>
+                <a href="#about" class="btn btn-outline-success" role="button" aria-pressed="true">Tell me more -></a>
+                </div>
               </div>
             </div>
             <div className="col-lg-6">

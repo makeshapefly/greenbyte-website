@@ -52,7 +52,7 @@ const FaqArea = ({spacing,style_2=false}) => {
         >
           <div className="col-xl-8 col-lg-10">
             <div className="section__title text-center title-mb-75">
-              <h2 className="title">Asked Questions</h2>
+              <h2 className="title">Net Zero FAQ</h2>
             </div>
           </div>
         </div>

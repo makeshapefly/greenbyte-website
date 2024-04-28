@@ -75,16 +75,16 @@ const AboutArea = () => {
                   {/* <h2 className="title">What we do</h2> */}
                 </div>
                 <p>
-                We help clients achieve the best business outcomes in their ongoing digital transformation and NetZero journey, with a pragmatic approach, and the right technology.<br/><br/>
-                We bring together the best business strategists and technologists to deliver transformational impact.<br/><br/>
-                Our goal is never change for the sake of it. We work on technology changes that matters, making them more efficient, more effective, and more sustainable.
+                We help clients with their Net Zero initatives.<br/><br/>
+                We bring people, data and technology together to reach incredible outcomes.<br/><br/>
+                Nothing is beyond our remit in the quest to help individuals, communities, councils, businesses and Government to reduce harmful emissions.
                 </p>
                 <div className="about__facts-list">
                   <div className="about__icon-box">
                     <div className="icon">
                       <i className="unicon-select-window"></i>
                     </div>
-                    <h5>Advice</h5>
+                    <h5>Advise</h5>
                   </div>
                   <div className="about__icon-box">
                     <div className="icon">

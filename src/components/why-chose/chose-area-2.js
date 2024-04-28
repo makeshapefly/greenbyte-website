@@ -76,27 +76,6 @@ const ChoseAreaTwo = () => {
               desc="We combine expertise with action, developing real-world solutions that tackle climate change today. Partner with us to make a tangible difference."
             />
           </div>
-          <img
-            src="/assets/img/objects/circle.png"
-            className="top-left"
-            width="16"
-            alt="Object"
-            style={{ top: "-16%", left: "8%" }}
-          />
-          <img
-            src="/assets/img/objects/circle-03.png"
-            className="bottom-right"
-            width="24"
-            alt="Object"
-            style={{ bottom: "16%", right: "-8%" }}
-          />
-          <img
-            src="/assets/img/objects/x.png"
-            className="bottom-left"
-            width="28"
-            alt="Object"
-            style={{ bottom: "16%", left: "-8%" }}
-          />
         </div>
       </div>
     </section>
