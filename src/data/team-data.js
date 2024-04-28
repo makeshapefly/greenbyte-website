@@ -2,7 +2,7 @@ const team_data = [
   {
     id:1,
     img:'/assets/img/team/12.jpg',
-    name:'Tony Turner',
+    name:'Tony',
     designation:'CTO',
     social_links: [
       { link: 'https://www.linkedin.com/in/turner2448/', icon: 'fab fa-linkedin', name: 'LinkedIn' },

@@ -17,7 +17,6 @@ const HomePage = () => {
     <Layout>
       <GradientPosition/>
       <HeroArea />
-      <SectionDivider/>
       <AboutArea />
       <ChoseAreaTwo/>
       <SectionDivider/>

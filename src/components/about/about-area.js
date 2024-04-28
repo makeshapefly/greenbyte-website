@@ -2,17 +2,12 @@ import React from "react";
 
 const AboutArea = () => {
   return (
-    <section id="about" className="about-area section-pt-70 section-pb-80">
+    <section id="about" className="about-area section-pt-70 section-pb-80" style={{marginTop: 350}}>
       <div className="container">
         <div
           className="row justify-content-center"
           data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;"
         >
-          <div className="col-xl-8 col-lg-10">
-            <div className="section__title text-center title-mb-80">
-              <h2 className="title">About Us</h2>
-            </div>
-          </div>
         </div>
         <div className="about__row-reverse">
           <div className="row align-items-center">
