@@ -45,7 +45,7 @@ const Header = ({ page }) => {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <div onClick={handleClick} className="mobile-nav-toggler" style={{marginTop:'20px'}}>
+              <div onClick={handleClick} className="mobile-nav-toggler" style={{marginTop:'37px'}}>
                 <i className="flaticon-menu-1"></i>
               </div>
               <div className="tgmenu__wrap">
@@ -135,6 +135,35 @@ const Header = ({ page }) => {
                           )} 
                         </React.Fragment>
                       ))}
+                    </ul>
+                  </div>
+                  <div className="tgmenu__action">
+                    <ul className="list-wrap">
+                      {/*<li className="header-social">
+                        <a href="#" className="d-none d-sm-block">
+                          <i className="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                          <i className="fab fa-discord"></i>
+                        </a>
+                        <a
+                          href="#"
+                          className="d-blcok d-xl-none"
+                          data-bs-toggle="modal"
+                          data-bs-target="#connectModal"
+                        >
+                          <i className="fas fa-wallet"></i>
+                        </a>
+                    </li> */}
+                      <li className="header-btn">
+                        <button
+                          className="btn border-btn"
+                          data-bs-toggle="modal"
+                          data-bs-target="#connectModal"
+                        >
+                          Connect wallet
+                        </button>
+                      </li>
                     </ul>
                   </div>
                 </nav>

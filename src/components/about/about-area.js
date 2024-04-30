@@ -22,20 +22,15 @@ const AboutArea = () => {
                 data-anime="opacity:[0, 1]; translateX:[-24, 0]; onview: -250; delay: 200;"
                 style={{width: '60%'}}
               >
-                <img src="/assets/img/others/image.png" alt="img" />
+                <img src="/assets/img/others/l2-content-img-2.png" alt="img" />
               </div>
             </div>
             <div className="col-lg-6">
               <div
                 className="about__content"
-                data-anime="opacity:[0, 1]; translateX:[24, 0]; onview: -250; delay: 300;"
+                data-anime="opacity:[0, 1]; translateX:[24, 0]; onview: -250; delay: 300;"         
               >
-                <div className="section__title text-start">
-                  <h1 className="sub-title tg-text-gradient">
-                    Who We Are
-                  </h1>
-                </div>
-                <p>
+                <p style={{marginTop: 90}}>
                 We are a team of carbon reduction consultants, software and data engineers, and community activists engaged in a broad range of initiatives to lower harmful emissions and build sustainable local communities.
                 </p>
                 <ul className="list-unstyled">
@@ -69,12 +64,6 @@ const AboutArea = () => {
                 className="about__content"
                 data-anime="opacity:[0, 1]; translateX:[-24, 0]; onview: -250; delay: 400;"
               >
-                <div className="section__title text-start">
-                  <h1 className="sub-title tg-text-gradient">
-                   What We Do
-                  </h1>
-                  {/* <h2 className="title">What we do</h2> */}
-                </div>
                 <p>
                 We help clients with their Net Zero initatives.<br/><br/>
                 We bring people, data and technology together to reach incredible outcomes.<br/><br/>
