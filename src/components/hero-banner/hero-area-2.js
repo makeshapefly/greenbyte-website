@@ -19,7 +19,7 @@ const HeroAreaTwo = () => {
               width="64"
               src="/assets/img/objects/star-05.svg"
               alt="object"
-              style={{ top: '0px', left: '100%' }}
+              style={{ top: '-70px', left: '100%' }}
               data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 400;"
             />
             <img
@@ -40,8 +40,8 @@ const HeroAreaTwo = () => {
               data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;"
             >
             </div>
-            <div>
-              <h2 className="title" style={{ fontSize: 56, lineHeight: 1 }}>Net Zero <span className="tg-text-gradient">Technologists</span></h2>
+
+              <h2 className="title" style={{ fontSize: 52, lineHeight: 1 }}>Net Zero <span className="tg-text-gradient">Technologists</span></h2>
               <div className="container">
                 <div className="row">
                   <div className="col-lg-12" style={{ fontSize: 32, color: '#000', marginTop: 30 }}>
@@ -50,7 +50,6 @@ const HeroAreaTwo = () => {
                     technology
                   </div>
                 </div>
-              </div>
 
               <li className="header-btn" style={{ marginTop: 40 }}>
                 <a href="#people-data">
