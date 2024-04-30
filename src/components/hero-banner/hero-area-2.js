@@ -19,7 +19,7 @@ const HeroAreaTwo = () => {
               width="64"
               src="/assets/img/objects/star-05.svg"
               alt="object"
-              style={{ top: '-70px', left: '100%' }}
+              style={{ top: '-70px', left: '95%' }}
               data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 400;"
             />
             <img

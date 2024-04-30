@@ -57,7 +57,7 @@ const AboutAreaTwo = () => {
         </div>
         <div className="about__row-reverse">
           <AboutBox
-            about_img="features-07.png"
+            about_img="l2-hero-image.png"
             title="Arming communities with data and platforms.."
             content_1="..can lean to wondrous outcomes."
             content_2="Smart decision making, a focus on measurable impact and the erosion of our carbon footprints."
