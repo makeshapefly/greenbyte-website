@@ -13,7 +13,7 @@ import { menu_data } from "../../data/menu_data";
 const Header = ({ page }) => {
   const { sticky } = useSticky()
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
-   let {pathname} = useLocation();
+  let { pathname } = useLocation();
 
   let parentClass = ""
   if (pathname.startsWith("/carbon-market")) {
@@ -38,24 +38,23 @@ const Header = ({ page }) => {
     <header>
       <div
         id="sticky-header"
-        className={`tg-header__area transparent-header ${
-          sticky ? "sticky-menu" : ""
-        }`}
+        className={`tg-header__area transparent-header ${sticky ? "sticky-menu" : ""
+          }`}
       >
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <div onClick={handleClick} className="mobile-nav-toggler" style={{marginTop:'37px'}}>
+              <div onClick={handleClick} className="mobile-nav-toggler" style={{ marginTop: '0px' }}>
                 <i className="flaticon-menu-1"></i>
               </div>
               <div className="tgmenu__wrap">
                 <nav className="tgmenu__nav">
                   <div className="logo">
                     <Link to="/" className="light-logo">
-                      <img src="/assets/img/logo/Greenbyte_logo.svg" alt="GreenByte" style={{maxWidth:'200px'}} />
+                      <img src="/assets/img/logo/Greenbyte_logo.svg" alt="GreenByte" style={{ maxWidth: '200px' }} />
                     </Link>
                     <Link to="/" className="dark-logo">
-                      <img src="/assets/img/logo/Greenbyte_logo.svg" alt="GreenByte" style={{maxWidth:'200px'}} />
+                      <img src="/assets/img/logo/Greenbyte_logo.svg" alt="GreenByte" style={{ maxWidth: '200px' }} />
                     </Link>
                   </div>
                   <div className="tgmenu__navbar-wrap tgmenu__main-menu d-none d-lg-flex">
@@ -77,7 +76,7 @@ const Header = ({ page }) => {
                                   {menu.title}
                                 </SinglePageLink>
                               )}
-                              {(menu.title === "Carbon Market") &&(
+                              {(menu.title === "Carbon Market") && (
                                 <Link
                                   className={`${parentClass}`}
                                   to={menu.link}
@@ -89,11 +88,10 @@ const Header = ({ page }) => {
                                 {menu.submenus.map((sub, i) => (
                                   <li
                                     key={i}
-                                    className={`${
-                                      pathname === `${sub.link}`
+                                    className={`${pathname === `${sub.link}`
                                         ? "active"
                                         : ""
-                                    }`}
+                                      }`}
                                   >
                                     <Link to={sub.link}>{sub.title}</Link>
                                   </li>
@@ -101,16 +99,16 @@ const Header = ({ page }) => {
                               </ul>
                             </li>
                           ) : (page && menu.title === "Blog") ? (
-                           
+
                             <li>
                               <AnchorLink to={`/${menu.link}`} title={menu.title} />
                             </li>
                           ) : (page) ? (
-                           
+
                             <li>
                               <AnchorLink to={`/#${menu.link}`} title={menu.title} />
                             </li>
-                       
+
                           ) : (
                             <li>
                               {menu.title === "Blog" ? (
@@ -131,21 +129,21 @@ const Header = ({ page }) => {
                                 </SinglePageLink>
                               )}
                             </li>
-                          
-                          )} 
+
+                          )}
                         </React.Fragment>
                       ))}
                     </ul>
                   </div>
                   <div className="tgmenu__action">
                     <ul className="list-wrap">
-                      {/*<li className="header-social">
-                        <a href="#" className="d-none d-sm-block">
+                      <li className="header-social">
+                       {/*} <a href="#" className="d-none d-sm-block">
                           <i className="fab fa-twitter"></i>
                         </a>
                         <a href="#">
                           <i className="fab fa-discord"></i>
-                        </a>
+                    </a> */}
                         <a
                           href="#"
                           className="d-blcok d-xl-none"
@@ -154,16 +152,18 @@ const Header = ({ page }) => {
                         >
                           <i className="fas fa-wallet"></i>
                         </a>
-                    </li> */}
-                      <li className="header-btn">
-                        <button
-                          className="btn border-btn"
-                          data-bs-toggle="modal"
-                          data-bs-target="#connectModal"
-                        >
-                          Connect wallet
-                        </button>
-                      </li>
+                    </li>
+                      <a href="#">
+                        <li className="header-btn">
+                          <button
+                            className="btn border-btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#connectModal"
+                          >
+                            Customer Login
+                          </button>
+                        </li>
+                      </a>
                     </ul>
                   </div>
                 </nav>
