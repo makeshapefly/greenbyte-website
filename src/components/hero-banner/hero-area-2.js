@@ -6,7 +6,7 @@ const HeroAreaTwo = () => {
       <div className="banner__background-wrap">
         <div
           className="background"
-          style={{ backgroundImage: "url(/assets/img/retrofit/streetscape.jpg", opacity: 0.1 }}
+          style={{ backgroundImage: "url(/assets/img/retrofit/streetscape.jpg)", opacity: 0.1 }}
         ></div>
       </div>
       <div className="container">
@@ -41,7 +41,7 @@ const HeroAreaTwo = () => {
             >
             </div>
             <div>
-              <h2 className="title" style={{ fontSize: 72, lineHeight: 1 }}>Net Zero <span className="tg-text-gradient">Technologists</span></h2>
+              <h2 className="title" style={{ fontSize: 56, lineHeight: 1 }}>Net Zero <span className="tg-text-gradient">Technologists</span></h2>
               <div className="container">
                 <div className="row">
                   <div className="col-lg-12" style={{ fontSize: 32, color: '#000', marginTop: 30 }}>
