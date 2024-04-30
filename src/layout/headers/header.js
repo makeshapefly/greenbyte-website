@@ -50,11 +50,8 @@ const Header = ({ page }) => {
               <div className="tgmenu__wrap">
                 <nav className="tgmenu__nav">
                   <div className="logo">
-                    <Link to="/" className="light-logo">
-                      <img src="/assets/img/logo/Greenbyte_logo.svg" alt="GreenByte" style={{ maxWidth: '200px' }} />
-                    </Link>
-                    <Link to="/" className="dark-logo">
-                      <img src="/assets/img/logo/Greenbyte_logo.svg" alt="GreenByte" style={{ maxWidth: '200px' }} />
+                    <Link to="/">
+                      <img src="/assets/img/logo/Greenbyte_logo-cropped.svg" alt="GreenByte"  />
                     </Link>
                   </div>
                   <div className="tgmenu__navbar-wrap tgmenu__main-menu d-none d-lg-flex">
