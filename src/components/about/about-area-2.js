@@ -38,8 +38,9 @@ function AboutBox({ about_img, sub_title, title, content_1, content_2 }) {
 const AboutAreaTwo = () => {
   return (
     <section
-      id="about"
+      id="people-data"
       className="about-area about-style-two section-pt-70 section-pb-80"
+      style={{marginTop:120}}
     >
       <div className="container">
         <div
@@ -49,7 +50,7 @@ const AboutAreaTwo = () => {
           <div className="col-xl-8 col-lg-10">
             <div className="section__title text-center title-mb-80">
               <h2 className="title">
-                How it <span className="tg-text-gradient">works!</span>
+                People + Data <span className="tg-text-gradient">+ Technology</span>
               </h2>
             </div>
           </div>
@@ -57,24 +58,9 @@ const AboutAreaTwo = () => {
         <div className="about__row-reverse">
           <AboutBox
             about_img="features-07.png"
-            sub_title="01"
-            title="Setup and connect your wallet."
-            content_1="Use Trust Wallet, Metamask or any wallet to connect to multiple chains the app."
-            content_2="Lorem ipsum dolor sit amet consectetur adipisicing elit Metamask or any wallet ipsam temporibus."
-          />
-          <AboutBox
-            about_img="features-05.png"
-            sub_title="02"
-            title="Create your own digital artwork"
-            content_1="Quality comes first. we took our time to plan out everything and build our production pipeline for a good quality artwork's & digital artwork."
-            content_2="Starting the production on the procedurally generated planets and the smart contract for minting."
-          />
-          <AboutBox
-            about_img="features-06.png"
-            sub_title="03"
-            title="Choose a platform to sell your NFT"
-            content_1="Earn ETH and BIT for all your NFTs that you sell on our marketplace."
-            content_2="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae doloremque a officiis quasi autem!"
+            title="Arming communities with data and platforms.."
+            content_1="..can lean to wondrous outcomes."
+            content_2="Smart decision making, a focus on measurable impact and the erosion of our carbon footprints."
           />
         </div>
       </div>

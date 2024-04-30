@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutArea = () => {
   return (
-    <section id="about" className="about-area section-pt-70 section-pb-80" style={{marginTop: 350}}>
+    <section id="about" className="about-area section-pt-70 section-pb-80" style={{marginTop: 20}}>
       <div className="container">
         <div
           className="row justify-content-center"
@@ -12,9 +12,15 @@ const AboutArea = () => {
         <div className="about__row-reverse">
           <div className="row align-items-center">
             <div className="col-lg-6">
+            <div className="section__title text-center title-mb-80">
+              <h2 className="title">
+                About <span className="tg-text-gradient">Us</span>
+              </h2>
+            </div>
               <div
                 className="about__img"
                 data-anime="opacity:[0, 1]; translateX:[-24, 0]; onview: -250; delay: 200;"
+                style={{width: '60%'}}
               >
                 <img src="/assets/img/others/image.png" alt="img" />
               </div>

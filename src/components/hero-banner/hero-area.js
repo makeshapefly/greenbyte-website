@@ -29,7 +29,7 @@ const HeroArea = () => {
                 className="banner__content"
                 data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;"
               >
-                <h2 className="title">Net zero technologists</h2>
+                <h2 className="title">Net zero <span className="tg-text-gradient">technologists</span></h2>
                 <p>
                   <div className="container">
                     <div className="row">
@@ -87,6 +87,7 @@ const HeroArea = () => {
         <div className="row">
           <div className="col-6">
             <div className="blog-inner-images">
+              
             </div>
           </div>
         </div>

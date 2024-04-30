@@ -1,10 +1,11 @@
 import React  from 'react';
 import { Seo } from "../components/seo"
 import HomeBrands from "../components/brands/home-brands"
-import HeroArea from "../components/hero-banner/hero-area"
+import HeroArea2 from "../components/hero-banner/hero-area-2"
 import Layout from "../layout/layout";
 import SectionDivider from "../components/section-divider"
 import AboutArea from "../components/about/about-area"
+import AboutArea2 from "../components/about/about-area-2"
 import TeamArea from '../components/teams/team-area';
 import FaqArea from '../components/faqs/faq-area';
 import CtaArea from '../components/cta/cta-area';
@@ -16,7 +17,8 @@ const HomePage = () => {
   return (
     <Layout>
       <GradientPosition/>
-      <HeroArea />
+      <HeroArea2 />
+      <AboutArea2 />
       <AboutArea />
       <ChoseAreaTwo/>
       <SectionDivider/>
