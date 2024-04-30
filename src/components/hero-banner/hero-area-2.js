@@ -6,7 +6,7 @@ const HeroAreaTwo = () => {
       <div className="banner__background-wrap">
         <div
           className="background"
-          style={{ backgroundImage: "url(/assets/img/retrofit/streetscape.jpg", opacity: 0.5 }}
+          style={{ backgroundImage: "url(/assets/img/retrofit/streetscape.jpg", opacity: 0.1 }}
         ></div>
       </div>
       <div className="container">
