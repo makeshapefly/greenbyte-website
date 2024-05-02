@@ -18,7 +18,7 @@ function AboutBox({ about_img, sub_title, title, content_1, content_2 }) {
           data-anime="opacity:[0, 1]; translateX:[24, 0]; onview: -250; delay: 300;"
         >
           <div className="section__title text-start">
-            <span className="sub-title tg-text-gradient">{sub_title}.</span>
+            <span className="sub-title tg-text-gradient">{sub_title}</span>
             <h2 className="title">{title}</h2>
           </div>
           <p>{content_1}</p>

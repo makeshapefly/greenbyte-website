@@ -16,7 +16,6 @@ import ChoseAreaTwo from "../components/why-chose/chose-area-2";
 const HomePage = () => {
   return (
     <Layout>
-      <GradientPosition/>
       <HeroArea2 />
       <AboutArea2 />
       <AboutArea />

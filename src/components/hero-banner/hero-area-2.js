@@ -19,7 +19,7 @@ const HeroAreaTwo = () => {
               width="64"
               src="/assets/img/objects/star-05.svg"
               alt="object"
-              style={{ top: '-70px', left: '95%' }}
+              style={{ top: '-70px', left: '90%' }}
               data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 400;"
             />
             <img
@@ -37,7 +37,6 @@ const HeroAreaTwo = () => {
 
             <div
               className="banner__content-two"
-              data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;"
             >
             </div>
 
@@ -50,19 +49,16 @@ const HeroAreaTwo = () => {
                     technology
                   </div>
                 </div>
-
-              <li className="header-btn" style={{ marginTop: 40 }}>
+              <div style={{ marginTop: 40 }}>
                 <a href="#people-data">
                   <button
                     className="btn border-btn"
-                    data-bs-toggle="modal"
-                    data-bs-target="#connectModal"
                     style={{ border: '3px solid', color: 'green', background: 'green' }}
                   >
-                    <span style={{ fontSize: 48, width: 100, color: '#FFF' }}>=</span>
+                    <span style={{ fontSize: 36, width: 100, color: '#FFF' }}>=</span>
                   </button>
                 </a>
-              </li>
+              </div>
             </div>
           </div>
         </div>
