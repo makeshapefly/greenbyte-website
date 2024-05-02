@@ -4,6 +4,8 @@ import { window } from "browser-monads";
 import { Link as SinglePageLink } from "react-scroll";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { useLocation } from "@reach/router";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faRightToBracket } from '@fortawesome/free-solid-svg-icons'
 // internal
 import OffCanvas from "../../components/common/off-canvas";
 import useSticky from "../../hooks/use-sticky";
@@ -149,7 +151,7 @@ const Header = ({ page }) => {
                           data-bs-toggle="modal"
                           data-bs-target="#connectModal"
                         >
-                          <i className="fas fa-wallet"></i>
+                          <FontAwesomeIcon icon={faRightToBracket} />
                         </a>
                     </li>
                       <a href="#">
