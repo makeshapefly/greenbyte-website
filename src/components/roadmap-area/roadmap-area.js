@@ -41,7 +41,7 @@ const sliderSetting = {
 const slider_data = [
   {
     id: 1,
-    icon: <img src="/icons/analysis.png" style={{ width: '60px' }} alt="img" />,
+    icon: <img src="/icons/calculate.png" style={{ width: '60px' }} alt="img" />,
     title: "Calculate",
     desc: "This phase involves the initial assessment and computation of relevant data to establish a baseline for the net-zero pathway.",
     lists: ["Analyze data and trends", "Inventory greenhouse gases", "Establish a baseline"],
