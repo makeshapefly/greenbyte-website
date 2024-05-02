@@ -16,7 +16,7 @@ const Header = ({ page }) => {
   let { pathname } = useLocation();
 
   let parentClass = ""
-  if (pathname.startsWith("/carbon-market")) {
+  if (pathname.startsWith("/carbon-market") || pathname.startsWith("/retrofit")) {
     parentClass = "active"
   }
 
@@ -51,7 +51,7 @@ const Header = ({ page }) => {
                 <nav className="tgmenu__nav">
                   <div className="logo">
                     <Link to="/">
-                      <img src="/assets/img/logo/Greenbyte_logo-cropped.svg" alt="GreenByte"  />
+                      <img src="/assets/img/logo/gb-logo.svg" alt="GreenByte"  />
                     </Link>
                   </div>
                   <div className="tgmenu__navbar-wrap tgmenu__main-menu d-none d-lg-flex">
@@ -60,7 +60,7 @@ const Header = ({ page }) => {
                         <React.Fragment key={i}>
                           {menu.hasDropdown ? (
                             <li className={`menu-item-has-children`}>
-                              {(menu.title !== "Carbon Market") && (
+                              {(menu.title !== "Projects") && (
                                 <SinglePageLink
                                   activeClass="active"
                                   to={menu.link}
@@ -73,8 +73,8 @@ const Header = ({ page }) => {
                                   {menu.title}
                                 </SinglePageLink>
                               )}
-                              {(menu.title === "Carbon Market") && (
-                                <Link
+                              {(menu.title === "Projects") && (
+                                <Link                               
                                   className={`${parentClass}`}
                                   to={menu.link}
                                 >
@@ -96,8 +96,10 @@ const Header = ({ page }) => {
                               </ul>
                             </li>
                           ) : (page && menu.title === "Blog") ? (
-
-                            <li>
+                            <li  className={(pathname.startsWith("/blog"))
+                            ? "active"
+                            : ""
+                          }>
                               <AnchorLink to={`/${menu.link}`} title={menu.title} />
                             </li>
                           ) : (page) ? (

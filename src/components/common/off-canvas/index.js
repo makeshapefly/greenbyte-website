@@ -26,12 +26,10 @@ const OffCanvas = ({setIsSidebarOpen,data_1=false,data_2=false,data_3=false}) =>
             <i className="flaticon-close-1"></i>
           </div>
           <div className="nav-logo">
-            <Link to="/" className="light-logo">
-              <img src="/assets/img/logo/Greenbyte_logo.svg" alt="GreenByte" />
+            <Link to="/">
+              <img src="/assets/img/logo/gb-logo.svg" alt="GreenByte" />
             </Link>
-            <Link to="/" className="dark-logo">
-              <img src="/assets/img/logo/Greenbyte_logo.svg" alt="GreenByte" />
-            </Link>
+           
           </div>
           <div className="tgmobile__menu-outer">
             {/* <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--> */}
