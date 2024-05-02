@@ -51,7 +51,7 @@ const Header = ({ page }) => {
                 <nav className="tgmenu__nav">
                   <div className="logo">
                     <Link to="/">
-                      <img src="/assets/img/logo/Greenbyte_logo-cropped.svg" alt="GreenByte"  />
+                      <img src="/assets/img/logo/gb-logo.svg" alt="GreenByte"  />
                     </Link>
                   </div>
                   <div className="tgmenu__navbar-wrap tgmenu__main-menu d-none d-lg-flex">

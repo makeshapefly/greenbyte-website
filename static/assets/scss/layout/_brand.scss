@@ -35,7 +35,7 @@
     &__item {
         & img {
             @media #{$xs} {
-                max-width: 132px;
+                max-width: 100%;
             }
         }
     }

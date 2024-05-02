@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
 import { Link as SinglePageLink } from "react-scroll";
-// internal
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
-const MobileMenus = ({ menuItems, setIsSidebarOpen }) => {
+const MobileMenus = ({ menuItems, setIsSidebarOpen }) => {  
   const [navTitle, setNavTitle] = useState("")
-
   //openMobileMenu
   const openMobileMenu = menu => {
     if (navTitle === menu) {
-      setNavTitle("")
+      setNavTitle("");
     } else {
-      setNavTitle(menu)
+      setNavTitle(menu);
     }
-  }
+  };
+
   return (
     <nav>
       <ul className="navigation">
@@ -21,7 +21,7 @@ const MobileMenus = ({ menuItems, setIsSidebarOpen }) => {
           <React.Fragment key={i}>
             {menu.hasDropdown && (
               <li className="active menu-item-has-children">
-                {menu.title !== "Blog" && (
+                {menu.title !== "Projects" && (
                   <SinglePageLink
                     onClick={() => setIsSidebarOpen(false)}
                     activeClass="active"
@@ -35,7 +35,7 @@ const MobileMenus = ({ menuItems, setIsSidebarOpen }) => {
                     {menu.title}
                   </SinglePageLink>
                 )}
-                {menu.title === "Blog" && (
+                {menu.title === "Projects" && (
                   <Link onClick={() => setIsSidebarOpen(false)} to={menu.link}>
                     {menu.title}
                   </Link>
@@ -67,20 +67,24 @@ const MobileMenus = ({ menuItems, setIsSidebarOpen }) => {
                 </div>
               </li>
             )}
-            {!menu.hasDropdown && (
+            {!menu.hasDropdown && menu.title !== "Blog" && (
               <li>
-                <SinglePageLink
-                  onClick={() => setIsSidebarOpen(false)}
-                  activeClass="active"
-                  to={menu.link}
+                <AnchorLink
+                onAnchorLinkClick={() => setIsSidebarOpen(false)}
+                  to={`/#${menu.link}`}
+                  title={menu.title}
+                  className="section-link"
                   spy={true}
                   smooth={true}
                   offset={-70}
                   duration={500}
-                  className="section-link"
-                >
-                  {menu.title}
-                </SinglePageLink>
+                  activeClass="active"
+                />
+              </li>
+            )}
+            {menu.title === "Blog" && (
+              <li>
+                <AnchorLink to={`/${menu.link}`} title={menu.title} />
               </li>
             )}
           </React.Fragment>

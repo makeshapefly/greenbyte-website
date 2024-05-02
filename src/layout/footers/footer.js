@@ -29,7 +29,7 @@ const Footer = () => {
                 </p>
                 <ul className="list-wrap footer__social">
                   <li>
-                    <a href="https://www.linkedin.com/">
+                    <a href="https://www.linkedin.com/company/greenbyte-io/" target="_blank">
                       <i className="fab fa-linkedin"></i>
                     </a>
                   </li>
