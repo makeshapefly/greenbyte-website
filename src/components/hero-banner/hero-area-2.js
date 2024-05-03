@@ -19,7 +19,7 @@ const HeroAreaTwo = () => {
               width="64"
               src="/assets/img/objects/wind-turbine-6.svg"
               alt="object"
-              style={{ top: '-80px', left: '90%' }}
+              style={{ top: '-50px', left: '90%' }}
               data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 400;"
             />
             {/*<img
@@ -32,7 +32,7 @@ const HeroAreaTwo = () => {
   />*/}
           </div>
         </div>
-        <div className="row justify-content-center">
+        <div className="row justify-content-center" style={{marginTop: 40}}>
           <div className="col-xl-7 col-lg-9">
 
             <div
@@ -40,22 +40,22 @@ const HeroAreaTwo = () => {
             >
             </div>
 
-            <h2 className="title" style={{ fontSize: 52, lineHeight: 1 }}>Net Zero <span className="tg-text-gradient">Technologists</span></h2>
+            <h2 className="title" style={{ fontSize: 64, lineHeight: 1}}>Net Zero <span className="tg-text-gradient">Heroes</span></h2>
             <div className="container">
               <div className="row">
                 <div className="col-lg-12" style={{ fontSize: 32, color: '#000', marginTop: 30 }}>
+                  <p style={{fontSize: 24, marginBottom: 10}}>Supporting the real heroes of harmful emissions reduction with the data and technology to make a difference</p>
                   people <img src="/assets/img/retrofit/icons8-sum-50.png" />
                   data <img src="/assets/img/retrofit/icons8-sum-50.png" />
                   technology
                 </div>
               </div>
-              <div style={{ marginTop: 40 }}>
-                <a href="#people-data">
-                  <button
-                    style={{ border: '3px solid', borderRadius: 30, color: 'green', width: 100, background: 'green' }}
-                  >
-                    <span style={{ fontSize: 48, width: 100, color: '#FFF' }}>=</span>
-                  </button>
+              <div style={{ marginTop: 20 }}>
+                <a
+                  href="#people-data"
+                >
+                  <img src="/assets/img/retrofit/circled-equals-svgrepo-com.svg" />
+                  
                 </a>
               </div>
             </div>

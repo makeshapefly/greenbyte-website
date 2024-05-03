@@ -53,7 +53,7 @@ const Header = ({ page }) => {
                 <nav className="tgmenu__nav">
                   <div className="logo">
                     <Link to="/">
-                      <img src="/assets/img/logo/gb-logo.svg" alt="GreenByte"  />
+                      <img src="/assets/img/logo/gb-logo.svg" alt="GreenByte" />
                     </Link>
                   </div>
                   <div className="tgmenu__navbar-wrap tgmenu__main-menu d-none d-lg-flex">
@@ -76,7 +76,7 @@ const Header = ({ page }) => {
                                 </SinglePageLink>
                               )}
                               {(menu.title === "Projects") && (
-                                <Link                               
+                                <Link
                                   className={`${parentClass}`}
                                   to={menu.link}
                                 >
@@ -88,8 +88,8 @@ const Header = ({ page }) => {
                                   <li
                                     key={i}
                                     className={`${pathname === `${sub.link}`
-                                        ? "active"
-                                        : ""
+                                      ? "active"
+                                      : ""
                                       }`}
                                   >
                                     <Link to={sub.link}>{sub.title}</Link>
@@ -98,14 +98,13 @@ const Header = ({ page }) => {
                               </ul>
                             </li>
                           ) : (page && menu.title === "Blog") ? (
-                            <li  className={(pathname.startsWith("/blog"))
-                            ? "active"
-                            : ""
-                          }>
+                            <li className={(pathname.startsWith("/blog"))
+                              ? "active"
+                              : ""
+                            }>
                               <AnchorLink to={`/${menu.link}`} title={menu.title} />
                             </li>
                           ) : (page) ? (
-
                             <li>
                               <AnchorLink to={`/#${menu.link}`} title={menu.title} />
                             </li>
@@ -132,6 +131,7 @@ const Header = ({ page }) => {
                             </li>
 
                           )}
+
                         </React.Fragment>
                       ))}
                     </ul>
@@ -139,7 +139,7 @@ const Header = ({ page }) => {
                   <div className="tgmenu__action">
                     <ul className="list-wrap">
                       <li className="header-social">
-                       {/*} <a href="#" className="d-none d-sm-block">
+                        {/*} <a href="#" className="d-none d-sm-block">
                           <i className="fab fa-twitter"></i>
                         </a>
                         <a href="#">
@@ -153,7 +153,7 @@ const Header = ({ page }) => {
                         >
                           <FontAwesomeIcon icon={faRightToBracket} />
                         </a>
-                    </li>
+                      </li>
                       <a href="#">
                         <li className="header-btn">
                           <button
