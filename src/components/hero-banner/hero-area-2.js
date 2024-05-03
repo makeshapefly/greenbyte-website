@@ -17,7 +17,7 @@ const HeroAreaTwo = () => {
             <img
               className="shape-two"
               width="64"
-              src="/assets/img/objects/star-05.svg"
+              src="/assets/img/objects/wind-turbine-6.svg"
               alt="object"
               style={{ top: '-70px', left: '90%' }}
               data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 400;"
@@ -25,7 +25,7 @@ const HeroAreaTwo = () => {
             <img
               className="shape-five"
               width="64"
-              src="/assets/img/objects/start-04.svg"
+              src="/assets/img/objects/wind-turbine-6.svg"
               alt="object"
               style={{ top: '-70px', left: '0%' }}
               data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 400;"

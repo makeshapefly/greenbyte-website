@@ -9,7 +9,6 @@ import AboutArea2 from "../components/about/about-area-2"
 import TeamArea from '../components/teams/team-area';
 import FaqArea from '../components/faqs/faq-area';
 import CtaArea from '../components/cta/cta-area';
-import GradientPosition from '../components/gradient-position';
 import RoadMapArea from '../components/roadmap-area/roadmap-area';
 import ChoseAreaTwo from "../components/why-chose/chose-area-2";
 
