@@ -19,17 +19,17 @@ const HeroAreaTwo = () => {
               width="64"
               src="/assets/img/objects/wind-turbine-6.svg"
               alt="object"
-              style={{ top: '-70px', left: '90%' }}
+              style={{ top: '-80px', left: '90%' }}
               data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 400;"
             />
-            <img
+            {/*<img
               className="shape-five"
               width="64"
               src="/assets/img/objects/wind-turbine-6.svg"
               alt="object"
-              style={{ top: '-70px', left: '0%' }}
+              style={{ top: '-80px', left: '70%' }}
               data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 400;"
-            />
+  />*/}
           </div>
         </div>
         <div className="row justify-content-center">
@@ -40,22 +40,21 @@ const HeroAreaTwo = () => {
             >
             </div>
 
-              <h2 className="title" style={{ fontSize: 52, lineHeight: 1 }}>Net Zero <span className="tg-text-gradient">Technologists</span></h2>
-              <div className="container">
-                <div className="row">
-                  <div className="col-lg-12" style={{ fontSize: 32, color: '#000', marginTop: 30 }}>
-                    people <img src="/assets/img/retrofit/icons8-sum-50.png" />
-                    data <img src="/assets/img/retrofit/icons8-sum-50.png" />
-                    technology
-                  </div>
+            <h2 className="title" style={{ fontSize: 52, lineHeight: 1 }}>Net Zero <span className="tg-text-gradient">Technologists</span></h2>
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-12" style={{ fontSize: 32, color: '#000', marginTop: 30 }}>
+                  people <img src="/assets/img/retrofit/icons8-sum-50.png" />
+                  data <img src="/assets/img/retrofit/icons8-sum-50.png" />
+                  technology
                 </div>
+              </div>
               <div style={{ marginTop: 40 }}>
                 <a href="#people-data">
                   <button
-                    className="btn border-btn"
-                    style={{ border: '3px solid', color: 'green', background: 'green' }}
+                    style={{ border: '3px solid', borderRadius: 30, color: 'green', width: 100, background: 'green' }}
                   >
-                    <span style={{ fontSize: 36, width: 100, color: '#FFF' }}>=</span>
+                    <span style={{ fontSize: 48, width: 100, color: '#FFF' }}>=</span>
                   </button>
                 </a>
               </div>

@@ -49,7 +49,7 @@ const AboutAreaTwo = () => {
         >
           <div className="col-xl-8 col-lg-10">
             <div className="section__title text-center title-mb-80">
-              <h2 className="title">
+              <h2 className="title" style={{fontSize: 52}}>
                 People + Data <span className="tg-text-gradient">+ Technology</span>
               </h2>
             </div>

@@ -13,7 +13,7 @@ const AboutArea = () => {
           <div className="row align-items-center">
             <div className="col-lg-6">
             <div className="section__title text-center title-mb-80">
-              <h2 className="title">
+              <h2 className="title" style={{fontSize: 52}}>
                 About <span className="tg-text-gradient">Us</span>
               </h2>
             </div>
