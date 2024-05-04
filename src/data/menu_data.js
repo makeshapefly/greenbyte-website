@@ -22,6 +22,7 @@ export const menu_data = [
     submenus: [
       { title: 'Carbon Markets' , link:'/carbon-market/'},
       { title: 'Retrofit' , link:'/retrofit/'},
+      { title: 'Great Collaboration' , link:'/greatcollab/'},
     ]
   },
   {
