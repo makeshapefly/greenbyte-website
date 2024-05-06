@@ -36,11 +36,10 @@ const RetrofitPage = () => {
                         </div>
                         <div className="col-md-3">
                           <div className="blog-inner-images">
-                            <a href="#">
+                            <a href="https://greatcollaboration.uk/the-toolkit/" target="_blank">
                               <p className="header-btn">
                                 <button
                                   className="btn border-btn"
-                                  data-bs-toggle="modal"
                                   data-bs-target="https://greatcollaboration.uk/the-toolkit/"
                                 >
                                   Open the Toolkit
