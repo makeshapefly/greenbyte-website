@@ -1,13 +1,13 @@
-import React  from 'react';
+import React from 'react';
 import "../styles/login.css";
 
 const Login = () => {
     return (
-        <div>
+        <div className="container" style={{ marginTop: 50 }}>
             <form>
                 <h3>Sign In</h3>
                 <div className="mb-3">
-                    <label>Email address</label>
+                    <label>Email</label>
                     <input
                         type="email"
                         className="form-control"
@@ -30,14 +30,40 @@ const Login = () => {
                             id="customCheck1"
                         />
                         <label className="custom-control-label" htmlFor="customCheck1">
-                            Remember me
+                            &#160;Remember me
                         </label>
                     </div>
                 </div>
-                <div className="d-grid">
-                    <button type="submit" className="btn btn-primary">
-                        Submit
-                    </button>
+                <div className="container">
+                    <div className="d-grid">
+                        <div className="row">
+                            <div className="col-6" style={{ fontSize: 24, color: '#000', marginTop: 10 }}>
+                                <a href="#">
+                                    <div className="header-btn">
+                                        <button
+                                            className="btn border-btn"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#connectModal"
+                                            type="submit"
+                                        >
+                                            Submit
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+                            <div className="col-6" style={{ fontSize: 24, color: '#000', marginTop: 10 }}>
+                                <a href="/">
+                                    <div className="header-btn">
+                                        <button
+                                            className="btn border-btn"
+                                        >
+                                            Back
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <p className="forgot-password text-right">
                     Forgot <a href="#">password?</a>

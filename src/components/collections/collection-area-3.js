@@ -57,6 +57,7 @@ const CollectionAreaThree = () => {
     <section
       id="collection"
       className="collection-area section-pt-70 section-pb-80"
+      style={{background: '#3f423b'}}
     >
       <div className="container">
         <div
@@ -66,7 +67,7 @@ const CollectionAreaThree = () => {
           <div className="col-xl-8 col-lg-10">
             <div className="section__title text-center title-mb-65">
               <h2 className="title">
-                Nerko's <span className="tg-text-gradient">collection</span>
+                <span style={{color: '#FFF'}}>Our</span> <span className="tg-text-gradient">work</span>
               </h2>
             </div>
           </div>
@@ -81,15 +82,14 @@ const CollectionAreaThree = () => {
               <SwiperSlide key={i}>
                 <div className="collection__three-item">
                   <div className="collection__three-thumb">
-                    <a href="#">
+                    <a href={item.link}>
                       <img src={item.img} alt="artwork" />
                     </a>
                   </div>
                   <div className="collection__three-content">
                     <h4 className="name">
-                      <a href="#">#{item.name}</a>
+                      <a href={item.link} style={{color: '#FFF'}}>{item.name}</a>
                     </h4>
-                    <span className="author">By {item.author}</span>
                   </div>
                 </div>
               </SwiperSlide>
@@ -109,10 +109,10 @@ const CollectionAreaThree = () => {
           className="collection__btn text-center"
           data-anime="opacity:[0, 1]; translateY:[-24, 0]; onview: true; delay: 200;"
         >
-          <a href="#" className="btn gradient-btn">
-            <span>View collection</span>{" "}
+          {/*<a href="#" className="btn gradient-btn">
+            <span>View collection</span>{" "} 
             <i className="unicon-arrow-up-right"></i>
-          </a>
+          </a>*/}
         </div>
       </div>
     </section>

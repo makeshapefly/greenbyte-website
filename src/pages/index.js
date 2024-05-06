@@ -11,11 +11,13 @@ import FaqArea from '../components/faqs/faq-area';
 import CtaArea from '../components/cta/cta-area';
 import RoadMapArea from '../components/roadmap-area/roadmap-area';
 import ChoseAreaTwo from "../components/why-chose/chose-area-2";
+import CollectionAreaThree from "../components/collections/collection-area-3";
 
 const HomePage = () => {
   return (
     <Layout>
       <HeroArea2 />
+      <CollectionAreaThree/>
       <AboutArea2 />
       <AboutArea />
       <ChoseAreaTwo/>

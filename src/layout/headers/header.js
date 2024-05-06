@@ -154,12 +154,10 @@ const Header = ({ page }) => {
                           <FontAwesomeIcon icon={faRightToBracket} />
                         </a>
                       </li>
-                      <a href="#">
+                      <a href="login">
                         <li className="header-btn">
                           <button
                             className="btn border-btn"
-                            data-bs-toggle="modal"
-                            data-bs-target="#connectModal"
                           >
                             Customer Login
                           </button>
