@@ -62,7 +62,7 @@ const Header = ({ page }) => {
                         <React.Fragment key={i}>
                           {menu.hasDropdown ? (
                             <li className={`menu-item-has-children`}>
-                              {(menu.title !== "Projects") && (
+                              {(menu.title !== "Community Projects") && (
                                 <SinglePageLink
                                   activeClass="active"
                                   to={menu.link}
@@ -75,7 +75,7 @@ const Header = ({ page }) => {
                                   {menu.title}
                                 </SinglePageLink>
                               )}
-                              {(menu.title === "Projects") && (
+                              {(menu.title === "Community Projects") && (
                                 <Link
                                   className={`${parentClass}`}
                                   to={menu.link}

@@ -13,6 +13,7 @@ const Login = () => {
                         type="email"
                         className="form-control"
                         placeholder="Enter email"
+                        required
                     />
                 </div>
                 <div className="mb-3">
@@ -21,6 +22,7 @@ const Login = () => {
                         type="password"
                         className="form-control"
                         placeholder="Enter password"
+                        required
                     />
                 </div>
                 <div className="mb-3">
@@ -43,8 +45,6 @@ const Login = () => {
                                     <div className="header-btn">
                                         <button
                                             className="btn border-btn"
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#connectModal"
                                             type="submit"
                                         >
                                             Submit

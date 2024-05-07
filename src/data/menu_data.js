@@ -1,10 +1,5 @@
 export const menu_data = [
   {
-    id: 1,
-    title: 'Home',
-    link: 'home',
-  },
-  {
     id: 2,
     title: 'About',
     link: 'about',
@@ -17,19 +12,14 @@ export const menu_data = [
   {
     id: 4,
     hasDropdown:true,
-    title: 'Projects',
-    link: '/carbon-market',
+    title: 'Community Projects',
+    link: '/retrofit',
     submenus: [
       { title: 'Carbon Markets' , link:'/carbon-market/'},
       { title: 'Retrofit' , link:'/retrofit/'},
       { title: 'Great Collaboration' , link:'/greatcollab/'},
       { title: 'DashBold' , link:'/dashbold/'},
     ]
-  },
-  {
-    id: 5,
-    title: 'Blog',
-    link:'blog',
   },
   {
     id: 6,
