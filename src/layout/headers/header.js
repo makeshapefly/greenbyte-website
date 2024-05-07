@@ -145,16 +145,16 @@ const Header = ({ page }) => {
                         <a href="#">
                           <i className="fab fa-discord"></i>
                     </a> */}
-                        <a
-                          href="#"
-                          className="d-blcok d-xl-none"
-                          data-bs-toggle="modal"
-                          data-bs-target="#connectModal"
-                        >
-                          <FontAwesomeIcon icon={faRightToBracket} />
-                        </a>
+                        <Link to="/login">
+                          <a
+                            href="/"
+                            className="d-blcok d-xl-none"
+                          >
+                            <FontAwesomeIcon icon={faRightToBracket} />
+                          </a>
+                        </Link>
                       </li>
-                      <a href="login">
+                      <Link to="/login">
                         <li className="header-btn">
                           <button
                             className="btn border-btn"
@@ -162,7 +162,7 @@ const Header = ({ page }) => {
                             Customer Login
                           </button>
                         </li>
-                      </a>
+                      </Link>
                     </ul>
                   </div>
                 </nav>

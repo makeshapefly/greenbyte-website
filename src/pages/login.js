@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "gatsby";
 import "../styles/login.css";
 
 const Login = () => {
@@ -54,11 +55,13 @@ const Login = () => {
                             <div className="col-6" style={{ fontSize: 24, color: '#000', marginTop: 10 }}>
                                 <a href="/">
                                     <div className="header-btn">
-                                        <button
-                                            className="btn border-btn"
-                                        >
-                                            Back
-                                        </button>
+                                        <Link to="/">
+                                            <button
+                                                className="btn border-btn"
+                                            >
+                                                Back
+                                            </button>
+                                        </Link>
                                     </div>
                                 </a>
                             </div>

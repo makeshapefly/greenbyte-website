@@ -23,6 +23,7 @@ export const menu_data = [
       { title: 'Carbon Markets' , link:'/carbon-market/'},
       { title: 'Retrofit' , link:'/retrofit/'},
       { title: 'Great Collaboration' , link:'/greatcollab/'},
+      { title: 'DashBold' , link:'/dashbold/'},
     ]
   },
   {

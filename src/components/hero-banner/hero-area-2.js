@@ -4,7 +4,7 @@ import React from "react"
 const HeroAreaTwo = () => {
   return (
     <section className="banner-area banner-style-two position-relative" style={{ minHeight: '90vh' }}>
-      <div className="banner__background-wrap" style={{ minHeight: '100vh' }}>
+      <div className="banner__background-wrap" style={{ minHeight: '102vh' }}>
         <div
           className="background"
           style={{ backgroundImage: "url(/assets/img/retrofit/streetscape.jpg)", opacity: 0.1 }}
