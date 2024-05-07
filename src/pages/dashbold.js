@@ -22,13 +22,13 @@ const Dashbold = () => {
                       <div className="row align-items-center">
                         <div className="col-md-12">
                           <div className="blog-inner-content">
-                            <h4 className="blog-inner-title">What's needed?</h4>
+                            <h4 className="blog-inner-title">At a glance</h4>
                             <ul className="list-wrap">
-                              <li><i className="fas fa-check"></i>Sprint attendance and organisation</li>
-                              <li><i className="fas fa-check"></i>Consulting and expertise</li>
-                              <li><i className="fas fa-check"></i>Development</li>
-                              <li><i className="fas fa-check"></i>Creation of single sign on</li>
-                              <li><i className="fas fa-check"></i>Data modelling.</li>
+                              <li><i className="fas fa-check"></i>Federated identity for all organisations within the dashboard</li>
+                              <li><i className="fas fa-check"></i>Connectivity to smart meter data.</li>
+                              <li><i className="fas fa-check"></i>Links to HMRC Land Registry data.</li>
+                              <li><i className="fas fa-check"></i>Access to heat pump technical data and supplies.</li>
+                              <li><i className="fas fa-check"></i>Third party integrations, e.g. energy loss hardware.</li>
                             </ul>
                           </div>
                         </div>
