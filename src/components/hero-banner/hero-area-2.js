@@ -43,11 +43,11 @@ const HeroAreaTwo = () => {
             >
             </div>
 
-            <h2 className="title" style={{ fontSize: 64, lineHeight: 1}}>Net Zero <span className="tg-text-gradient">Heroes</span></h2>
+            <h2 className="title" style={{ fontSize: 64, lineHeight: 1}}><a href="#netZero">Net Zero</a> <span className="tg-text-gradient">Heroes</span></h2>
             <div className="container">
               <div className="row">
                 <div className="col-lg-12" style={{ fontSize: 24, color: '#000', marginTop: 10 }}>
-                  <p style={{fontSize: 24, marginBottom: 10}}>Supporting the real heroes fighting climate change with the data and technology to make a difference</p>
+                  <p style={{fontSize: 24, marginBottom: 10}}>Supporting the real heroes fighting climate change with the data and technology to make a difference.</p>
                   people <img src="/assets/img/retrofit/icons8-sum-50.png" />
                   data <img src="/assets/img/retrofit/icons8-sum-50.png" />
                   technology

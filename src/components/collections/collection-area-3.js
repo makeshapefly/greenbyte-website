@@ -67,7 +67,7 @@ const CollectionAreaThree = () => {
           <div className="col-xl-8 col-lg-10">
             <div className="section__title text-center title-mb-65">
               <h2 className="title">
-                <span style={{color: '#FFF'}}>Our</span> <span className="tg-text-gradient">work</span>
+                <span style={{color: '#FFF'}}>Community</span> <span className="tg-text-gradient">projects</span>
               </h2>
             </div>
           </div>

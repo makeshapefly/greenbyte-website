@@ -5,20 +5,23 @@ export const menu_data = [
     link: 'about',
   },
   {
-    id: 3,
-    title: 'NetZero',
-    link: 'netZero',
-  },
-  {
     id: 4,
     hasDropdown:true,
     title: 'Community Projects',
     link: '/retrofit',
     submenus: [
-      { title: 'Carbon Markets' , link:'/carbon-market/'},
       { title: 'Retrofit' , link:'/retrofit/'},
       { title: 'Great Collaboration' , link:'/greatcollab/'},
       { title: 'DashBold' , link:'/dashbold/'},
+    ]
+  },
+  {
+    id: 5,
+    hasDropdown:true,
+    title: 'Commercial Work',
+    link: '/carbon-market',
+    submenus: [
+      { title: 'Carbon Markets' , link:'/carbon-market/'},
     ]
   },
   {

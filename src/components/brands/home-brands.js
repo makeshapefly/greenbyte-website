@@ -35,6 +35,7 @@ const HomeBrands = () => {
               <SingleBrand img_1="wallets/carbonplace.svg" img_2="wallets/carbonplace.svg" height={80}/>
               <SingleBrand img_1="retrofit/guce.jpg" img_2="retrofit/guce.jpg" height={100} />
               <SingleBrand img_1="artwork/ukpn.png" img_2="artwork/ukpn.png" height={100} />
+              <SingleBrand img_1="retrofit/avdc.png" img_2="retrofit/avdc.png" height={100} />
             </div>
           </div>
         </div>
