@@ -20,6 +20,7 @@
   padding: 40px 55px 45px 55px;
   border-radius: 15px;
   transition: all .3s;
+  margin-top: 10%;
 }
 .auth-wrapper .form-control:focus {
   border-color: #167bff;
@@ -30,6 +31,14 @@
   margin: 0;
   line-height: 1;
   padding-bottom: 20px;
+}
+.auth-wrapper h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.auth-inner .container h2 {
+  color: red;
+  font-size: 18px;
 }
 .custom-control-label {
   font-weight: 400;
