@@ -17,9 +17,9 @@ const HomePage = () => {
   return (
     <Layout>
       <HeroArea2 />
-      <CollectionAreaThree/>
       <AboutArea2 />
       <AboutArea />
+      <CollectionAreaThree/>
       <ChoseAreaTwo/>
       <SectionDivider/>
       <RoadMapArea/>
