@@ -86,7 +86,7 @@ const team_data = [
     name:'Farhath Ayesha',
     designation:'UI/UX Frontend Developer',
     social_links: [
-      { link: 'https://www.linkedin.com/in/mohiddin-shaik-1684604/', icon: 'fab fa-linkedin', name: 'LinkedIn' },
+      { link: 'https://www.linkedin.com/in/farhath-ayesha-mohammad-59848724b/', icon: 'fab fa-linkedin', name: 'LinkedIn' },
     ],
   },
 ]
