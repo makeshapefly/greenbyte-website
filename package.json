@@ -30,7 +30,9 @@
     "react-dom": "^18.0.0",
     "react-html-parser": "^2.0.2",
     "react-scroll": "^1.8.9",
+    "react-slick": "^0.30.2",
     "sass": "1.49.11",
+    "slick-carousel": "^1.8.1",
     "swiper": "^9.0.2"
   },
   "devDependencies": {

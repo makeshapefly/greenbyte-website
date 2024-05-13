@@ -50,7 +50,7 @@ const AboutAreaTwo = () => {
           <div className="col-xl-8 col-lg-10">
             <div className="section__title text-center title-mb-80">
               <h2 className="title" style={{fontSize: 52}}>
-                People + Data <span className="tg-text-gradient">+ Technology</span>
+                People <img src="/assets/img/retrofit/icons8-sum-50.png" /> Data <span className="tg-text-gradient"><img src="/assets/img/retrofit/icons8-sum-50.png" /> Technology</span>
               </h2>
             </div>
           </div>
