@@ -3,7 +3,6 @@ import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import video from '../../../public/assets/img/retrofit/shutterstock_1096048299.mp4'
-import video2 from '../../../public/assets/img/retrofit/1068696866-preview.mp4'
 
 const HeroAreaTwo = () => {
   const videoRef = useRef(null)
@@ -12,16 +11,14 @@ const HeroAreaTwo = () => {
   useEffect(() => {
     const { current: videoElement } = videoRef
     videoElement.setAttribute('muted', '')
-
-    const { current: videoElement2 } = videoRef2
-    videoElement.setAttribute('muted', '')
   }, [])
 
   const settings = {
     dots: true,
     infinite: true,
-    //autoplay: true,
+    autoplay: true,
     speed: 1500,
+    autoplaySpeed: 8000,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false
@@ -79,6 +76,12 @@ const HeroAreaTwo = () => {
                   </div>
 
                   <div>
+                    <div className="blog-inner-images">
+                      <a href="/retrofit">
+                        <img src="/assets/img/retrofit/air-source-heat-pump.png" style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto', width: '50%' }} />
+                      </a>
+                      <span style={{ fontSize: 36, textDecoration: 'bold' }}>Retrofit</span>
+                    </div>
                   </div>
                   <div></div>
                 </Slider>
