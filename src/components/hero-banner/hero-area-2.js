@@ -77,10 +77,15 @@ const HeroAreaTwo = () => {
 
                   <div>
                     <div className="blog-inner-images">
-                      <a href="/retrofit">
-                        <img src="/assets/img/retrofit/air-source-heat-pump.png" style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto', width: '50%' }} />
-                      </a>
-                      <span style={{ fontSize: 36, textDecoration: 'bold' }}>Retrofit</span>
+                      <div>
+                        <a href="/retrofit">
+                          <img src="/assets/img/retrofit/Thermal-image-of-heat-loss-from-house_dezeen_01-hero.webp" style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto', width: '80%', height: '80%' }} />
+                        </a>
+                        <p>
+                        <span style={{ fontSize: 24, textDecoration: 'bold', color: '#FFF', position: 'absolute', top: '60%', background: '#000', borderRadius: '30px', padding: 10}}>Retrofit</span>
+                      </p>
+                      </div>
+                      
                     </div>
                   </div>
                   <div></div>

@@ -14,7 +14,7 @@ const ProjectDetailsArea = () => {
                 <h2 className="title">The journey to Net Zero</h2>
                 <p>Upgrading arguably the oldest and leakiest housing stock in Western Europe is one of the biggest opportunities the UK has to reduce carbon emissions, level up communities and provide clean energy security.</p>
                 <p>Improving the energy efficiency of 29 million homes by 2050 is no mean feat however, which is why GreenByte is working to identify and remove blockages to this unparalleled challenge. </p>
-                <p>GreenByte recognises itself as a small player in the bigger picture. But now is the time for community groups, small to large business, councils and Government to come together to resolve systemic problems. </p>
+                <p>GreenByte recognises itself as a small player in the bigger picture. But now is the time for community groups, the private sector, councils and Government to come together to resolve systemic problems. </p>
                 <p>This is why GreenByte is partnered with UK Power Networks to train domestic energy assessors to make free home visits to households in Hertfordshire.
                   This includes home visits to vulnerable homeowners and tenants and those in energy poverty with the aim of providing impartial advice on energy efficiency and retrofitting with onward referrals to available grants and supporting charities. </p>
                 <div className="blog-inner-wrapper">
