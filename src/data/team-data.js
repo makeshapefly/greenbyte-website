@@ -19,15 +19,6 @@ const team_data = [
   },
   {
     id:3,
-    img:'/assets/img/team/mo.png',
-    name:'Mohiddin',
-    designation:'Technical Architect',
-    social_links: [
-      { link: 'https://www.linkedin.com/in/mohiddin-shaik-1684604/', icon: 'fab fa-linkedin', name: 'LinkedIn' },
-    ],
-  },
-  {
-    id:4,
     img:'/assets/img/retrofit/geek-avatar.jpg',
     name:'Dawood',
     designation:'Director of Engineering',
@@ -36,7 +27,7 @@ const team_data = [
     ],
   },
   {
-    id:5,
+    id:4,
     img:'/assets/img/team/nitesh.png',
     name:'Nitesh',
     designation:'Technical Architect',
@@ -45,7 +36,7 @@ const team_data = [
     ],
   },
   {
-    id:6,
+    id:5,
     img:'/assets/img/team/rashid.png',
     name:'Rashid Ali',
     designation:'Full Stack Software Engineer',
@@ -54,7 +45,7 @@ const team_data = [
     ],
   },
   {
-    id:7,
+    id:6,
     img:'/assets/img/team/saiteja.png',
     name:'Sai Teja',
     designation:'Scrum Master / PM',
@@ -63,7 +54,7 @@ const team_data = [
     ],
   },
   {
-    id:8,
+    id:7,
     img:'/assets/img/team/vamsi.png',
     name:'Sai Vamsi',
     designation:'DevOps Tech Lead',
@@ -72,7 +63,7 @@ const team_data = [
     ],
   },
   {
-    id:9,
+    id:8,
     img:'/assets/img/team/arun.png',
     name:'Arun Kumar',
     designation:'QA Practice Lead',
@@ -81,12 +72,21 @@ const team_data = [
     ],
   },
   {
-    id:10,
+    id:9,
     img:'/assets/img/team/fatima.png',
     name:'Fatima zahara',
     designation:'QA Engineer',
     social_links: [
       { link: 'https://www.linkedin.com/in/fatima-zahara-mohammed-8284a524b/', icon: 'fab fa-linkedin', name: 'LinkedIn' },
+    ],
+  },
+  {
+    id:10,
+    img:'/assets/img/team/farhath.png',
+    name:'Farhath Ayesha',
+    designation:'UI/UX Frontend Developer',
+    social_links: [
+      { link: 'https://www.linkedin.com/in/farhath-ayesha-mohammad-59848724b/', icon: 'fab fa-linkedin', name: 'LinkedIn' },
     ],
   },
 ]
