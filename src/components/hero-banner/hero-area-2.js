@@ -48,7 +48,6 @@ const HeroAreaTwo = () => {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
         <div className="container">
@@ -75,7 +74,7 @@ const HeroAreaTwo = () => {
                 <Slider {...settings}>
                   <div style={{ fontSize: 24, color: '#000' }}>
                     <a href="https://climateemergency.uk/wp-content/uploads/2024/03/Scorecards_Successes_report_CEUK_DIGITAL.pdf" target="_blank">
-                      <img src="/assets/img/retrofit/report-image-edited.jpg" width="75%" />
+                      <img src="/assets/img/retrofit/report-image-edited.jpg" style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto', width: '75%' }} />
                     </a>
                   </div>
 

@@ -19,12 +19,12 @@ function AboutBox({ about_img, sub_title, title, content_1, content_2 }) {
         >
           <div className="section__title text-start">
             <span className="sub-title tg-text-gradient">{sub_title}</span>
-            <h2 className="title">{title}</h2>
+            <h2>{title}</h2>
           </div>
           <p>{content_1}</p>
           <p>{content_2}</p>
           <div className="about__content-text-btn">
-            <a href="#">
+            <a href="#about">
               <span>Learn more</span>
               <i className="unicon-arrow-up-right"></i>
             </a>
@@ -59,7 +59,7 @@ const AboutAreaTwo = () => {
           <AboutBox
             about_img="l2-hero-image.png"
             title="Arming communities with data and platforms.."
-            content_1="..can lean to wondrous outcomes."
+            content_1="= positive outcomes."
             content_2="Smart decision making, a focus on measurable impact and the erosion of our carbon footprints."
           />
         </div>
