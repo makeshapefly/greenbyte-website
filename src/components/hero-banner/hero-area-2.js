@@ -6,7 +6,6 @@ import video from '../../../public/assets/img/retrofit/shutterstock_1096048299.m
 
 const HeroAreaTwo = () => {
   const videoRef = useRef(null)
-  const videoRef2 = useRef(null)
 
   useEffect(() => {
     const { current: videoElement } = videoRef
@@ -24,9 +23,31 @@ const HeroAreaTwo = () => {
     arrows: false
   }
 
+  function SingleChoseItem({ id, title, desc, img }) {
+    return (
+      <div>
+        <div className="row">
+          <div className="col-xl-4 col-lg-4 col-sm-4 col-xs-4">
+            <div>
+              <a href="https://climateemergency.uk/wp-content/uploads/2024/03/Scorecards_Successes_report_CEUK_DIGITAL.pdf" target="_blank">
+                <img src="/assets/img/retrofit/report-image-edited.jpg" style={{ width: '80%', opacity: '1.0', display: 'block', marginLeft: 'auto', marginRight: 'auto' }} />
+              </a>
+            </div>
+          </div>
+          <div className="col-xl-8 col-lg-8 col-sm-8 col-xs-8">
+            <div>
+              <h3 className="title">{title}</h3>
+              <p>{desc}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <div>
-      <section className="banner-area banner-style-two" style={{ alignItems: 'start' }}>
+      <section className="banner-area banner-style-two" style={{ alignItems: 'start', minHeight: '95vh', paddingBottom: 0 }}>
         <div className="banner__background-wrap" style={{ minHeight: '10vh' }}>
           <div
           //style={{ backgroundImage: "url(/assets/img/retrofit/streetscape.jpg)", opacity: 0.1 }}
@@ -49,12 +70,12 @@ const HeroAreaTwo = () => {
         </div>
         <div className="container">
           <div className="row">
-            <div className="col-xl-6 col-lg-6">
-              <h2 className="title" style={{ fontSize: 64, lineHeight: 1, marginTop: '20%' }}><a href="#netZero">Net Zero</a> <span className="tg-text-gradient">Heroes</span></h2>
+            <div className="col-xl-12 col-lg-12">
+              <h2 className="title" style={{ fontSize: 64, lineHeight: 1, marginTop: '12%' }}><a href="#netZero">Net Zero</a> <span className="tg-text-gradient">Heroes</span></h2>
               <div className="container">
                 <div className="row justify-content-center">
                   <div className="col-lg-12" style={{ fontSize: 24, color: '#000' }}>
-                    <p style={{ fontSize: 24, marginBottom: 10, color: '#000' }}>Communities in partnership with councils, Government and the private sector.</p>
+                    <p style={{ fontSize: 24, marginBottom: 20, color: '#000' }}>We work with communities, councils, Government and the private sector to provide data and platforms for Net Zero initiatives</p>
                     <a
                       href="#people-data"
                       className="banner__btn btn gradient-btn gradient-btn-2 scroll-to-target"
@@ -66,36 +87,13 @@ const HeroAreaTwo = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-6 col-lg-6">
-              <div className="row ml-auto p-2" style={{ marginTop: '20%', padding: '100px' }}>
-                <Slider {...settings}>
-                  <div style={{ fontSize: 24, color: '#000' }}>
-                    <a href="https://climateemergency.uk/wp-content/uploads/2024/03/Scorecards_Successes_report_CEUK_DIGITAL.pdf" target="_blank">
-                      <img src="/assets/img/retrofit/report-image-edited.jpg" style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto', width: '75%' }} />
-                    </a>
-                  </div>
-
-                  <div>
-                    <div className="blog-inner-images">
-                      <div>
-                        <a href="/retrofit">
-                          <img src="/assets/img/retrofit/Thermal-image-of-heat-loss-from-house_dezeen_01-hero.webp" style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto', width: '80%', height: '80%' }} />
-                        </a>
-                        <p>
-                        <span style={{ fontSize: 24, textDecoration: 'bold', color: '#FFF', position: 'absolute', top: '60%', background: '#000', borderRadius: '30px', padding: 10}}>Retrofit</span>
-                      </p>
-                      </div>
-                      
-                    </div>
-                  </div>
-                  <div></div>
-                </Slider>
-              </div>
-            </div>
           </div>
         </div>
       </section>
+
+    
     </div>
+
   )
 }
 
