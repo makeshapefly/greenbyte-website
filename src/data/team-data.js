@@ -19,7 +19,7 @@ const team_data = [
   },
   {
     id:3,
-    img:'/assets/img/retrofit/geek-avatar.jpg',
+    img:'/assets/img/team/dawood.png',
     name:'Dawood',
     designation:'Director of Engineering',
     social_links: [

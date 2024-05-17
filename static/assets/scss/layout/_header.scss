@@ -193,7 +193,7 @@
         @include transition(0s);
     }
 	& img {
-        max-width: 150px;
+        width: 200px;
         @include transition(0s);
     }
     & .dark-logo {
