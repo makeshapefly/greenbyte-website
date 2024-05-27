@@ -11,7 +11,7 @@ const SingleBlog = ({ blog }) => {
   month = month < 10 ? `0${month}` : month;
   const shareUrl = `https://greenbyteuk.blogspot.com/${year}/${month}/${slug}.html`;
 
-  const contentPreview = content?.substring(0, 400) + "...";
+  const contentPreview = content?.substring(0, 300) + "...";
 
   return (
     <div className="blog-post-item">

@@ -1,12 +1,9 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination, Navigation, Autoplay } from "swiper";
-import "swiper/swiper-bundle.min.css";
 
 // internal
 import collection_data from "../../data/collection-data";
-
-SwiperCore.use([Pagination, Navigation, Autoplay]); // Use necessary Swiper modules
 
 const CollectionAreaThree = () => {
   const slider_setting = {
@@ -74,7 +71,7 @@ const CollectionAreaThree = () => {
         <div className="collection__three-wrapper">
           <Swiper
             {...slider_setting}
-            modules={[Navigation, Pagination, Autoplay]}
+            modules={[Navigation, Pagination]}
             className="swiper-container collection-three-active swiper"
           >
             {collection_data.map((item, i) => (

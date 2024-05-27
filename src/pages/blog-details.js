@@ -16,7 +16,6 @@ const BlogDetailsPage = ({ data }) => {
       <Layout page={true}>
         <GradientPosition />
         <BlogBg />
-        <Breadcrumb />
         <BlogDetailsArea blog={blog} />
       </Layout>
     </div>

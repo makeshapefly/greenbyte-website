@@ -11,27 +11,29 @@ const BlogDetailsArea = ({ blog }) => {
   const shareUrl = `https://greenbyteuk.blogspot.com/${year}/${month}/${slug}.html`;
 
   return (
-    <section className="blog-area blog-details-area">
+    <section className="blog-area" style={{ marginTop: "150px" }}>
       <div className="container">
-        <div className="blog-post-content">
-          <div className="blog-post-meta">
-            <ul className="list-wrap">
-              <li>
-                <i className="far fa-user"></i>
-                {author.displayName}
-              </li>
-              <li>
-                <i className="far fa-calendar-alt"></i>
-                {formatDate(published)}
-              </li>
-              <li>
-                <i className="fas fa-copy"></i>
-                <CopyButton linkToCopy={shareUrl} />
-              </li>
-            </ul>
+        <div className="row justify-content-center">
+          <div className="col-lg-8">
+            <div className="blog-post-meta">
+              <ul className="list-wrap">
+                <li>
+                  <i className="far fa-user"></i>
+                  {author.displayName}
+                </li>
+                <li>
+                  <i className="far fa-calendar-alt"></i>
+                  {formatDate(published)}
+                </li>
+                <li>
+                  <i className="fas fa-copy"></i>
+                  <CopyButton linkToCopy={shareUrl} />
+                </li>
+              </ul>
+            </div>
+            <h2 className="title">{title}</h2>
+            <div>{parse(content)}</div>
           </div>
-          <h2 className="title">{title}</h2>
-          <div>{parse(content)}</div>
         </div>
       </div>
     </section>

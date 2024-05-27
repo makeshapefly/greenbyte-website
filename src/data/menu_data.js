@@ -29,10 +29,8 @@ export const menu_data = [
   },
   {
     id: 7,
-    hasDropdown: true,
     title: "Blog",
-    link: "/blog",
-    submenus: [{ title: "Blog", link: "/blog/" }],
+    link: "blog",
   },
 ];
 // menu data 2
