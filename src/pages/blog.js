@@ -7,7 +7,6 @@ import Breadcrumb from "../components/common/breadcrumb";
 import BlogArea from "../components/blog/blog-area";
 
 const BlogPage = () => {
-  console.log("BlogPage");
   return (
     <Layout page={true}>
       <GradientPosition />

@@ -32,10 +32,7 @@ export const menu_data = [
     hasDropdown: true,
     title: "Blog",
     link: "/blog",
-    submenus: [
-      { title: "Blog", link: "/blog/" },
-      { title: "Blog Details", link: "/blog-details/" },
-    ],
+    submenus: [{ title: "Blog", link: "/blog/" }],
   },
 ];
 // menu data 2

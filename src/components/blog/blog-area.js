@@ -36,7 +36,7 @@ const BlogArea = () => {
         <div className="row justify-content-center">
           <div className="col-lg-8">
             {blog_data.allBloggerPost.edges.map((blog) => (
-              <SingleBlog key={blog.id} blog={blog} />
+              <SingleBlog key={blog.node.id} blog={blog} />
             ))}
           </div>
         </div>
