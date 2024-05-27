@@ -111,21 +111,6 @@ const AboutArea = () => {
                   <div
                     className="about__icon-box"
                     style={{
-                      maxWidth: "180px",
-                    }}
-                  >
-                    <div style={{ padding: 20 }}>
-                      <img
-                        src="/assets/img/retrofit/build.svg"
-                        alt="Build"
-                        width={"50px"}
-                      />
-                    </div>
-                    <h5>Build</h5>
-                  </div>
-                  <div
-                    className="about__icon-box"
-                    style={{
                       maxWidth: "250px",
                     }}
                   >
@@ -137,6 +122,21 @@ const AboutArea = () => {
                       />
                     </div>
                     <h5>Collabarate</h5>
+                  </div>
+                  <div
+                    className="about__icon-box"
+                    style={{
+                      maxWidth: "180px",
+                    }}
+                  >
+                    <div style={{ padding: 20 }}>
+                      <img
+                        src="/assets/img/retrofit/build.svg"
+                        alt="Build"
+                        width={"50px"}
+                      />
+                    </div>
+                    <h5>Build</h5>
                   </div>
                 </div>
               </div>

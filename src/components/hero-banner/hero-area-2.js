@@ -116,9 +116,9 @@ const HeroAreaTwo = () => {
                     <p
                       style={{ fontSize: 24, marginBottom: 20, color: "#000" }}
                     >
-                      We work with communities, councils, Government and the
-                      private sector to provide data and platforms for Net Zero
-                      initiatives
+                      We collaborate with communities, councils, government
+                      agencies, and the private sector to provide data and
+                      platforms that support Net Zero initiatives.
                     </p>
                     <a
                       href="#people-data"
