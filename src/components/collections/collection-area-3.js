@@ -1,63 +1,61 @@
-import React from "react"
-import { Swiper, SwiperSlide } from "swiper/react"
-import { Pagination, Navigation } from "swiper"
-// internal
-import collection_data from "../../data/collection-data"
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Pagination, Navigation, Autoplay } from "swiper";
+import "swiper/swiper-bundle.min.css";
 
-// slider setting
-const slider_setting = {
-  loop: false,
-  slidesPerView: 4,
-  spaceBetween: 48,
-  breakpoints: {
-    1500: {
-      slidesPerView: 4,
-    },
-    1200: {
-      slidesPerView: 4,
-    },
-    992: {
-      slidesPerView: 3,
-    },
-    768: {
-      slidesPerView: 2,
-      centeredSlides: true,
-      centeredSlidesBounds: true,
-      spaceBetween: 35,
-    },
-    576: {
-      slidesPerView: 2,
-      centeredSlides: true,
-      centeredSlidesBounds: true,
-      spaceBetween: 30,
-    },
-    420: {
-      slidesPerView: 2,
-      centeredSlides: true,
-      centeredSlidesBounds: true,
-      spaceBetween: 20,
-    },
-    0: {
-      slidesPerView: 1,
-    },
-  },
-  pagination: {
-    el: ".tg-swiper-pagination",
-    clickable: true,
-  },
-  // Navigation arrows
-  navigation: {
-    nextEl: ".tg-swiper-next",
-    prevEl: ".tg-swiper-prev",
-  },
-}
+// internal
+import collection_data from "../../data/collection-data";
+
+SwiperCore.use([Pagination, Navigation, Autoplay]); // Use necessary Swiper modules
 
 const CollectionAreaThree = () => {
+  const slider_setting = {
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 48,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      1500: { slidesPerView: 3 },
+      1200: { slidesPerView: 3 },
+      992: { slidesPerView: 3 },
+      768: {
+        slidesPerView: 1,
+        centeredSlides: true,
+        centeredSlidesBounds: true,
+        spaceBetween: 35,
+      },
+      576: {
+        slidesPerView: 1,
+        centeredSlides: true,
+        centeredSlidesBounds: true,
+        spaceBetween: 30,
+      },
+      420: {
+        slidesPerView: 1,
+        centeredSlides: true,
+        centeredSlidesBounds: true,
+        spaceBetween: 20,
+      },
+      0: { slidesPerView: 1 },
+    },
+    pagination: {
+      el: ".tg-swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".tg-swiper-next",
+      prevEl: ".tg-swiper-prev",
+    },
+  };
+
   return (
     <section
       id="collection"
-      className="collection-area section-pt-70 section-pb-80"
-      style={{background: '#3f423b'}}
+      className="collection-area section-pt-70 section-pb-30"
+      style={{ background: "#3f423b" }}
     >
       <div className="container">
         <div
@@ -67,7 +65,8 @@ const CollectionAreaThree = () => {
           <div className="col-xl-8 col-lg-10">
             <div className="section__title text-center title-mb-65">
               <h2 className="title">
-                <span style={{color: '#FFF'}}>Community</span> <span className="tg-text-gradient">projects</span>
+                <span style={{ color: "#FFF" }}>Community</span>{" "}
+                <span className="tg-text-gradient">projects</span>
               </h2>
             </div>
           </div>
@@ -75,12 +74,15 @@ const CollectionAreaThree = () => {
         <div className="collection__three-wrapper">
           <Swiper
             {...slider_setting}
-            modules={[Navigation, Pagination]}
+            modules={[Navigation, Pagination, Autoplay]}
             className="swiper-container collection-three-active swiper"
           >
             {collection_data.map((item, i) => (
               <SwiperSlide key={i}>
-                <div className="collection__three-item">
+                <div
+                  className="collection__three-item"
+                  style={{ maxWidth: "300px", margin: "0 auto" }}
+                >
                   <div className="collection__three-thumb">
                     <a href={item.link}>
                       <img src={item.img} alt="artwork" />
@@ -88,7 +90,9 @@ const CollectionAreaThree = () => {
                   </div>
                   <div className="collection__three-content">
                     <h4 className="name">
-                      <a href={item.link} style={{color: '#FFF'}}>{item.name}</a>
+                      <a href={item.link} style={{ color: "#FFF" }}>
+                        {item.name}
+                      </a>
                     </h4>
                   </div>
                 </div>
@@ -97,7 +101,7 @@ const CollectionAreaThree = () => {
             <div className="tg-swiper-pagination"></div>
           </Swiper>
 
-          {/* <!-- Navigation --> */}
+          {/* Navigation */}
           <a aria-label="Prev" href="#prev" className="tg-swiper-prev">
             <i className="fas fa-chevron-left"></i>
           </a>
@@ -110,13 +114,13 @@ const CollectionAreaThree = () => {
           data-anime="opacity:[0, 1]; translateY:[-24, 0]; onview: true; delay: 200;"
         >
           {/*<a href="#" className="btn gradient-btn">
-            <span>View collection</span>{" "} 
+            <span>View collection</span>{" "}
             <i className="unicon-arrow-up-right"></i>
           </a>*/}
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default CollectionAreaThree
+export default CollectionAreaThree;

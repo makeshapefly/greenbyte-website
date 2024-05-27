@@ -12,12 +12,12 @@ const BlogDetailsPage = () => {
       <Layout page={true}>
         <GradientPosition />
         <BlogBg />
-        <Breadcrumb title="Minimal workspace for inspiration" />
-        <BlogDetailsArea/>
+        <Breadcrumb />
+        <BlogDetailsArea />
       </Layout>
     </div>
-  )
-}
-export default BlogDetailsPage
+  );
+};
+export default BlogDetailsPage;
 
-export const Head = () => <Seo title="Blog Details" />
+export const Head = () => <Seo title="Blog Details" />;

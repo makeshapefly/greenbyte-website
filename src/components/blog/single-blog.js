@@ -2,6 +2,7 @@ import { Link } from "gatsby";
 import React from "react";
 import parse from "react-html-parser";
 import { formatDate } from "../../utils/format";
+import CopyButton from "../copy-button/CopyButton";
 
 const SingleBlog = ({ blog }) => {
   console.log(blog);
@@ -13,7 +14,9 @@ const SingleBlog = ({ blog }) => {
   month = month < 10 ? `0${month}` : month; // Adding leading zero if month is less than 10
 
   // Creating the share URL
-  const shareUrl = `https://anwtest1.blogspot.com/${year}/${month}/${slug}.html`;
+  const shareUrl = `https://greenbyteuk.blogspot.com/${year}/${month}/${slug}.html`;
+
+  const contentPreview = blog.node.content.substring(0, 400) + "...";
 
   return (
     <div className="blog-post-item">
@@ -34,18 +37,15 @@ const SingleBlog = ({ blog }) => {
               {formatDate(blog.node.published)}
             </li>
             <li>
-              {/* Share button */}
-              <i className="fas fa-share"></i>
-              <a href={shareUrl} target="_blank" rel="noopener noreferrer">
-                Share
-              </a>
+              <i className="fas fa-copy"></i>
+              <CopyButton linkToCopy={shareUrl} />
             </li>
           </ul>
         </div>
         <h2 className="title">
           <Link to="/blog-details">{blog.node.title}</Link>
         </h2>
-        <p>{parse(blog.node.content)}</p>
+        <p>{parse(contentPreview)}</p>
       </div>
     </div>
   );

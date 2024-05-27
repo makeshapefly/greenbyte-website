@@ -1,16 +1,16 @@
-import React, { useRef, useEffect } from "react"
-import Slider from "react-slick"
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
-import video from '../../../public/assets/img/retrofit/shutterstock_1096048299.mp4'
+import React, { useRef, useEffect } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import video from "../../../public/assets/img/retrofit/shutterstock_1096048299.mp4";
 
 const HeroAreaTwo = () => {
-  const videoRef = useRef(null)
+  const videoRef = useRef(null);
 
   useEffect(() => {
-    const { current: videoElement } = videoRef
-    videoElement.setAttribute('muted', '')
-  }, [])
+    const { current: videoElement } = videoRef;
+    videoElement.setAttribute("muted", "");
+  }, []);
 
   const settings = {
     dots: true,
@@ -20,8 +20,8 @@ const HeroAreaTwo = () => {
     autoplaySpeed: 8000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false
-  }
+    arrows: false,
+  };
 
   function SingleChoseItem({ id, title, desc, img }) {
     return (
@@ -29,8 +29,20 @@ const HeroAreaTwo = () => {
         <div className="row">
           <div className="col-xl-4 col-lg-4 col-sm-4 col-xs-4">
             <div>
-              <a href="https://climateemergency.uk/wp-content/uploads/2024/03/Scorecards_Successes_report_CEUK_DIGITAL.pdf" target="_blank">
-                <img src="/assets/img/retrofit/report-image-edited.jpg" style={{ width: '80%', opacity: '1.0', display: 'block', marginLeft: 'auto', marginRight: 'auto' }} />
+              <a
+                href="https://climateemergency.uk/wp-content/uploads/2024/03/Scorecards_Successes_report_CEUK_DIGITAL.pdf"
+                target="_blank"
+              >
+                <img
+                  src="/assets/img/retrofit/report-image-edited.jpg"
+                  style={{
+                    width: "80%",
+                    opacity: "1.0",
+                    display: "block",
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                  }}
+                />
               </a>
             </div>
           </div>
@@ -42,26 +54,36 @@ const HeroAreaTwo = () => {
           </div>
         </div>
       </div>
-    )
+    );
   }
 
   return (
     <div>
-      <section className="banner-area banner-style-two" style={{ alignItems: 'start', minHeight: '95vh', paddingBottom: 0 }}>
-        <div className="banner__background-wrap" style={{ minHeight: '10vh' }}>
+      <section
+        className="banner-area banner-style-two"
+        style={{ alignItems: "start", minHeight: "100vh", paddingBottom: 0 }}
+      >
+        <div className="banner__background-wrap" style={{ minHeight: "10vh" }}>
           <div
           //style={{ backgroundImage: "url(/assets/img/retrofit/streetscape.jpg)", opacity: 0.1 }}
           >
-            <div className="container" style={{ maxWidth: '2000px' }}>
+            <div className="container" style={{ maxWidth: "2000px" }}>
               <div className="row">
                 <div className="col-xl-12 col-lg-12 d-none d-lg-block">
-                  <div >
-                    <video src={video} autoPlay ref={videoRef} muted style={{
-                      width: '100%',
-                      height: '100%',
-                      opacity: '0.2',
-                      marginTop: '100px'
-                    }} />
+                  <div>
+                    <video
+                      src={video}
+                      autoPlay
+                      ref={videoRef}
+                      muted
+                      loop
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        opacity: "0.2",
+                        marginTop: "90px",
+                      }}
+                    />
                   </div>
                 </div>
               </div>
@@ -71,11 +93,33 @@ const HeroAreaTwo = () => {
         <div className="container">
           <div className="row">
             <div className="col-xl-12 col-lg-12">
-              <h2 className="title" style={{ fontSize: 64, lineHeight: 1, marginTop: '12%' }}><a href="#netZero">Net Zero</a> <span className="tg-text-gradient">Heroes</span></h2>
-              <div className="container">
+              <h2
+                className="title"
+                style={{ fontSize: 64, lineHeight: 1, marginTop: "8%" }}
+              >
+                <a href="#netZero">Net Zero</a>{" "}
+                <span className="tg-text-gradient">Heroes</span>
+              </h2>
+              <div
+                className="container"
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  maxWidth: "600px",
+                }}
+              >
                 <div className="row justify-content-center">
-                  <div className="col-lg-12" style={{ fontSize: 24, color: '#000' }}>
-                    <p style={{ fontSize: 24, marginBottom: 20, color: '#000' }}>We work with communities, councils, Government and the private sector to provide data and platforms for Net Zero initiatives</p>
+                  <div
+                    className="col-lg-12"
+                    style={{ fontSize: 24, color: "#000" }}
+                  >
+                    <p
+                      style={{ fontSize: 24, marginBottom: 20, color: "#000" }}
+                    >
+                      We work with communities, councils, Government and the
+                      private sector to provide data and platforms for Net Zero
+                      initiatives
+                    </p>
                     <a
                       href="#people-data"
                       className="banner__btn btn gradient-btn gradient-btn-2 scroll-to-target"
@@ -90,11 +134,8 @@ const HeroAreaTwo = () => {
           </div>
         </div>
       </section>
-
-    
     </div>
+  );
+};
 
-  )
-}
-
-export default HeroAreaTwo
+export default HeroAreaTwo;
