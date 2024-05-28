@@ -3,6 +3,7 @@ import React from "react";
 import parse from "react-html-parser";
 import { formatDate } from "../../utils/format";
 import CopyButton from "../copy-button/CopyButton";
+import cheerio from "cheerio";
 
 const SingleBlog = ({ blog }) => {
   const { slug, published, title, content, author } = blog.node;
@@ -11,10 +12,27 @@ const SingleBlog = ({ blog }) => {
   month = month < 10 ? `0${month}` : month;
   const shareUrl = `https://greenbyteuk.blogspot.com/${year}/${month}/${slug}.html`;
 
-  const contentPreview = content?.substring(0, 300) + "...";
+  const $ = cheerio.load(content);
+  const firstImage = $("img").first().attr("src");
 
+  $("img").remove();
+  const contentText = $.text();
+  const contentPreview = contentText.substring(0, 250) + "...";
+
+  console.log(blog);
   return (
     <div className="blog-post-item">
+      <div className="blog-post-thumb">
+        <Link to="/blog-details">
+          {firstImage ? (
+            <img
+              src={firstImage}
+              alt="blog image"
+              style={{ maxWidth: "600px", width: "100%" }}
+            />
+          ) : null}
+        </Link>
+      </div>
       <div className="blog-post-content">
         <div className="blog-post-meta">
           <ul className="list-wrap">

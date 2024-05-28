@@ -1,9 +1,9 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Pagination, Navigation, Autoplay } from "swiper";
-
-// internal
+import SwiperCore, { Pagination, Navigation, Autoplay } from "swiper/core";
 import collection_data from "../../data/collection-data";
+
+SwiperCore.use([Pagination, Navigation, Autoplay]);
 
 const CollectionAreaThree = () => {
   const slider_setting = {
@@ -48,6 +48,14 @@ const CollectionAreaThree = () => {
     },
   };
 
+  const duplicatedSlides = [];
+  const totalSlides = collection_data.length;
+  for (let i = 0; i < 2; i++) {
+    for (let j = 0; j < totalSlides; j++) {
+      duplicatedSlides.push(collection_data[j]);
+    }
+  }
+
   return (
     <section
       id="collection"
@@ -71,10 +79,11 @@ const CollectionAreaThree = () => {
         <div className="collection__three-wrapper">
           <Swiper
             {...slider_setting}
-            modules={[Navigation, Pagination]}
+            modules={[Navigation, Pagination, Autoplay]}
             className="swiper-container collection-three-active swiper"
+            style={{ maxWidth: "100%", margin: "0 auto" }}
           >
-            {collection_data.map((item, i) => (
+            {duplicatedSlides.map((item, i) => (
               <SwiperSlide key={i}>
                 <div
                   className="collection__three-item"
