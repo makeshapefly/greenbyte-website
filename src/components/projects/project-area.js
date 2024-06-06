@@ -141,11 +141,18 @@ const ProjectDetailsArea = () => {
                   </div>
                 </div>
                 <div className="blog-inner-wrapper">
-                  <div className="row gx-4">
-                    <div className="col-sm-6">
+                  <div
+                    className="row gx-4"
+                    style={{ justifyContent: "center" }}
+                  >
+                    <div className="col-sm-6" style={{ width: "30%" }}>
                       <div className="blog-inner-img">
                         <a href="https://guce.org.uk/" target="_blank">
-                          <img src="/assets/img/retrofit/guce.jpg" alt="" />
+                          <img
+                            src="/assets/img/retrofit/guce.jpg"
+                            alt=""
+                            style={{ maxHeight: "150px" }}
+                          />
                         </a>
                       </div>
                     </div>
@@ -157,7 +164,7 @@ const ProjectDetailsArea = () => {
                         >
                           <img
                             src="/assets/img/retrofit/great_collaboration.webp"
-                            height="160px"
+                            height="100px"
                             alt=""
                           />
                         </a>

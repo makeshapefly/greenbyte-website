@@ -114,11 +114,16 @@ const HeroAreaTwo = () => {
                     style={{ fontSize: 24, color: "#000" }}
                   >
                     <p
-                      style={{ fontSize: 24, marginBottom: 20, color: "#000" }}
+                      style={{
+                        fontSize: 24,
+                        marginTop: 20,
+                        marginBottom: 20,
+                        color: "#000",
+                      }}
                     >
-                      We collaborate with communities, councils, government
-                      agencies, and the private sector to provide data and
-                      platforms that support Net Zero initiatives.
+                      We collaborate with communities, councils, government, and
+                      the private sector to provide data and platforms that
+                      support Net Zero initiatives.
                     </p>
                     <a
                       href="#people-data"
