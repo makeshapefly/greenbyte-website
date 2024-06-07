@@ -32,7 +32,7 @@ const BlogDetailsArea = ({ blog }) => {
               </ul>
             </div>
             <h2 className="title">{title}</h2>
-            <div>{parse(content)}</div>
+            <div className="blog-content">{parse(content)}</div>
           </div>
         </div>
       </div>
