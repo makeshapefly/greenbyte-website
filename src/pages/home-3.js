@@ -1,6 +1,7 @@
 import React from "react";
 import { Seo } from "../components/seo";
-import Layout from "../layout/layout-3";
+//import Layout from "../layout/layout-3";
+import Layout from "../layout/layout";
 import HeroAreaThree from "../components/hero-banner/hero-area-3";
 import BrandThree from "../components/brands/brand-three";
 import SectionDivider from "../components/section-divider";

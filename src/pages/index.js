@@ -1,7 +1,7 @@
 import React from "react";
 import { Seo } from "../components/seo";
 import HomeBrands from "../components/brands/home-brands";
-import HeroArea2 from "../components/hero-banner/hero-area-2";
+import HeroArea3 from "../components/hero-banner/hero-area-3";
 import Layout from "../layout/layout";
 import SectionDivider from "../components/section-divider";
 import AboutArea from "../components/about/about-area";
@@ -17,7 +17,7 @@ import CollectionAreaThree from "../components/collections/collection-area-3";
 const HomePage = () => {
   return (
     <Layout>
-      <HeroArea2 />
+      <HeroArea3 />
       <CollectionAreaThree />
       <AboutArea2 />
       <AboutArea />

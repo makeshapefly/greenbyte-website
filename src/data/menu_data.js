@@ -23,11 +23,6 @@ export const menu_data = [
     submenus: [{ title: "Carbon Markets", link: "/carbon-market/" }],
   },
   {
-    id: 6,
-    title: "Contact Us",
-    link: "contact",
-  },
-  {
     id: 7,
     title: "Blog",
     link: "blog",
