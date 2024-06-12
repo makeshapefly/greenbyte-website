@@ -7,6 +7,9 @@ import GradientPosition from "../components/gradient-position";
 import BlogDetailsArea from "../components/blog/blog-details-area";
 
 const BlogDetailsPage = ({ data }) => {
+  if (!data || !data.bloggerPost) {
+    return <div>Error: Blog post data is not available.</div>;
+  }
   const blog = data.bloggerPost;
 
   return (

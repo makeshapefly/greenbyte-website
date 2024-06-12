@@ -23,15 +23,13 @@ const SingleBlog = ({ blog }) => {
   return (
     <div className="blog-post-item">
       <div className="blog-post-thumb">
-        <Link to="/blog-details">
-          {firstImage ? (
-            <img
-              src={firstImage}
-              alt="blog image"
-              style={{ maxWidth: "600px", width: "100%" }}
-            />
-          ) : null}
-        </Link>
+        {firstImage ? (
+          <img
+            src={firstImage}
+            alt="blog image"
+            style={{ maxWidth: "600px", width: "100%" }}
+          />
+        ) : null}
       </div>
       <div className="blog-post-content">
         <div className="blog-post-meta">
