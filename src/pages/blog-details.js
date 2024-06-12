@@ -24,7 +24,7 @@ const BlogDetailsPage = ({ data }) => {
 };
 
 export const query = graphql`
-  query ($slug: String!) {
+  query ($slug: String) {
     bloggerPost(slug: { eq: $slug }) {
       slug
       id
