@@ -1,32 +1,29 @@
 import React from "react";
-import BlogSidebar from "./blog-sidebar";
 import SingleBlog from "./single-blog";
 import { graphql, useStaticQuery } from "gatsby";
 
 const BlogArea = () => {
-  const mediumData = useStaticQuery(graphql`
+  const blog_data = useStaticQuery(graphql`
     query {
-      allMediumPost(sort: { fields: [createdAt], order: DESC }) {
+      allBloggerPost {
         edges {
           node {
+            slug
             id
             title
-            content {
-              subtitle
-            }
-            virtuals {
-              subtitle
-              previewImage {
-                imageId
+            content
+            published
+            author {
+              id
+              displayName
+              url
+              image {
+                url
               }
             }
-            createdAt
-            slug
-            medium_id
-            author {
-              name
-              id
-              username
+            replies {
+              totalItems
+              selfLink
             }
           }
         }
@@ -36,10 +33,10 @@ const BlogArea = () => {
   return (
     <section className="blog-area">
       <div className="container">
-        <div className="row" style={{justifyContent:'center'}}>
+        <div className="row justify-content-center">
           <div className="col-lg-8">
-            {mediumData.allMediumPost.edges.map((blog) => (
-              <SingleBlog key={blog.id} blog={blog} />
+            {blog_data.allBloggerPost.edges.map((blog) => (
+              <SingleBlog key={blog.node.id} blog={blog} />
             ))}
           </div>
         </div>

@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-pages-blog-details-js","path":"/blog-details/","result":{"pageContext":{}},"staticQueryHashes":["63159454"],"slicesMap":{}}
+{"componentChunkName":"component---src-pages-blog-details-js","path":"/blog-details/","result":{"errors":[{"message":"Variable \"$slug\" of required type \"String!\" was not provided.","locations":[{"line":1,"column":94}]}],"pageContext":{}},"staticQueryHashes":["2768773727","63159454"],"slicesMap":{}}

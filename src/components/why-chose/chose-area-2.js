@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 // single chose item
 function SingleChoseItem({ icon, title, desc }) {
@@ -14,7 +14,7 @@ function SingleChoseItem({ icon, title, desc }) {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 const ChoseAreaTwo = () => {
@@ -30,7 +30,9 @@ const ChoseAreaTwo = () => {
         >
           <div className="col-xl-8 col-lg-10">
             <div className="section__title text-center title-mb-80">
-              <h1 className="section__title tg-text-gradient">WHY WORK WITH US?</h1>
+              <h2 className="title" style={{ fontSize: 52 }}>
+                Why Work <span className="tg-text-gradient">With Us?</span>
+              </h2>
             </div>
           </div>
         </div>
@@ -50,36 +52,24 @@ const ChoseAreaTwo = () => {
             />
             <SingleChoseItem
               icon="unicon-checkmark-outline"
-              title={
-                <>
-                  Accessible Technology for Change
-                </>
-              }
+              title={<>Accessible Technology for Change</>}
               desc="We create user-friendly tech so everyone can take part in building a sustainable future through accessible tools."
             />
             <SingleChoseItem
               icon="unicon-collaborate"
-              title={
-                <>
-                  Collaborative Community Engagement
-                </>
-              }
+              title={<>Collaborative Community Engagement</>}
               desc="We partner with communities, not just offer solutions. Together, we build a sustainable future through collaboration and empowered local voices."
             />
             <SingleChoseItem
               icon="unicon-building"
-              title={
-                <>
-                  Building for Today and Tomorrow
-                </>
-              }
+              title={<>Building for Today and Tomorrow</>}
               desc="We combine expertise with action, developing real-world solutions that tackle climate change today. Partner with us to make a tangible difference."
             />
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ChoseAreaTwo
+export default ChoseAreaTwo;

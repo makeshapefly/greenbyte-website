@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-const Breadcrumb = ({title}) => {
+const Breadcrumb = ({ title }) => {
   return (
     <section className="breadcrumb-area">
       <div className="container">

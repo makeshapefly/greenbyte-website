@@ -3,41 +3,55 @@ import React from "react";
 import parse from "react-html-parser";
 import { formatDate } from "../../utils/format";
 import CopyButton from "../copy-button/CopyButton";
+import cheerio from "cheerio";
 
 const SingleBlog = ({ blog }) => {
-  const shareUrl = `https://medium.com/@${blog.node.author.username}/${blog.node.slug}-${blog.node.medium_id}`;
-  const mediumUrl = `https://medium.com/@${blog.node.author.username}`;
-  const imageUrl = `https://miro.medium.com/v2/resize:fit:828/format:webp/${blog.node.virtuals.previewImage.imageId}`;
+  const { slug, published, title, content, author } = blog.node;
+  const year = new Date(published).getFullYear();
+  let month = new Date(published).getMonth() + 1;
+  month = month < 10 ? `0${month}` : month;
+  const shareUrl = `https://greenbyteuk.blogspot.com/${year}/${month}/${slug}.html`;
 
+  const $ = cheerio.load(content);
+  const firstImage = $("img").first().attr("src");
+
+  $("img").remove();
+  const contentText = $.text();
+  const contentPreview = contentText.substring(0, 250) + "...";
+
+  console.log(blog);
   return (
     <div className="blog-post-item">
       <div className="blog-post-thumb">
-        <Link to={shareUrl}>
-          <img src={imageUrl} alt="img" />
-        </Link>
+        {firstImage ? (
+          <img
+            src={firstImage}
+            alt="blog image"
+            style={{ maxWidth: "600px", width: "100%" }}
+          />
+        ) : null}
       </div>
       <div className="blog-post-content">
         <div className="blog-post-meta">
           <ul className="list-wrap">
             <li>
               <i className="far fa-user"></i>
-              <Link to={mediumUrl}>{blog.node.author.name}</Link>
+              <Link to={`/blog/${slug}`}>{author?.displayName}</Link>
             </li>
             <li>
               <i className="far fa-calendar-alt"></i>
-              {formatDate(blog.node.createdAt)}
+              {formatDate(published)}
             </li>
             <li>
-              {/* Copy button */}
               <i className="fas fa-copy"></i>
               <CopyButton linkToCopy={shareUrl} />
             </li>
           </ul>
         </div>
         <h2 className="title">
-          <Link to={shareUrl}>{blog.node.title}</Link>
+          <Link to={`/blog/${slug}`}>{title}</Link>
         </h2>
-        <p>{parse(blog.node.content.subtitle)}</p>
+        <p>{parse(contentPreview)}</p>
       </div>
     </div>
   );

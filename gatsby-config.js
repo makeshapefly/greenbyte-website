@@ -22,8 +22,8 @@ module.exports = {
     {
       resolve: "gatsby-source-blogger",
       options: {
-        apiKey: "AIzaSyARMfeKc_DcHpof49x0W0XdNjLqXkCu-VU",
-        blogId: "6355049226979332769",
+        apiKey: "AIzaSyBwC5RCGKf3le7ei1q_2z3qAGBlzhtwugE",
+        blogId: "8372429003282801727",
         downloadImage: true,
       },
     },
