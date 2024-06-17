@@ -7,20 +7,11 @@ export const menu_data = [
   {
     id: 4,
     hasDropdown: true,
-    title: "Community Projects",
-    link: "/retrofit",
+    title: "Products",
+    link: "/dashbold",
     submenus: [
-      { title: "Retrofit", link: "/retrofit/" },
-      { title: "Great Collaboration", link: "/greatcollab/" },
-      { title: "DashBold", link: "/dashbold/" },
+      { title: "Efficient Homes Dashboards", link: "/dashbold/" },
     ],
-  },
-  {
-    id: 5,
-    hasDropdown: true,
-    title: "Commercial Work",
-    link: "/carbon-market",
-    submenus: [{ title: "Carbon Markets", link: "/carbon-market/" }],
   },
   {
     id: 7,

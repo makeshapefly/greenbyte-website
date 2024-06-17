@@ -8,29 +8,17 @@ import AboutArea from "../components/about/about-area";
 import AboutArea2 from "../components/about/about-area-2";
 import TeamArea from "../components/teams/team-area";
 import FaqArea from "../components/faqs/faq-area";
-import CtaArea from "../components/cta/cta-area";
-import RoadMapArea from "../components/roadmap-area/roadmap-area";
-import ChoseAreaTwo from "../components/why-chose/chose-area-2";
-import CollectionArea from "../components/collections/collection-area";
-import CollectionAreaThree from "../components/collections/collection-area-3";
 
 const HomePage = () => {
   return (
     <Layout>
       <HeroArea3 />
-      <CollectionAreaThree />
       <AboutArea2 />
       <AboutArea />
-      <ChoseAreaTwo />
-      <SectionDivider />
-      <RoadMapArea />
-      <SectionDivider />
       <TeamArea />
-      <HomeBrands />
       <SectionDivider />
       <FaqArea />
       <SectionDivider />
-      <CtaArea />
     </Layout>
   );
 };
