@@ -23,7 +23,7 @@ function AboutBox({ about_img, sub_title, title, content_1, content_2 }) {
 
   return (
     <div className="row align-items-center">
-      <div className="col-lg-9">
+      <div className="col-lg-7">
         <div
           className="about__img"
           data-anime="opacity:[0, 1]; translateX:[-24, 0]; onview: -250; delay: 200;"
@@ -35,7 +35,7 @@ function AboutBox({ about_img, sub_title, title, content_1, content_2 }) {
           }} />
         </div>
       </div>
-      <div className="col-lg-3">
+      <div className="col-lg-5">
         <div
           className="about__content"
           data-anime="opacity:[0, 1]; translateX:[24, 0]; onview: -250; delay: 300;"
@@ -46,8 +46,8 @@ function AboutBox({ about_img, sub_title, title, content_1, content_2 }) {
           </div>
           <p>{content_1}</p>
           <p>{content_2}</p>
-          <div className="about__content-text-btn">
-            <a href="#about">
+          <div className="about__content-text-btn" style={{marginTop: 10}}>
+            <a href="/dashbold">
               <span>Learn more</span>
               <i className="unicon-arrow-up-right"></i>
             </a>
@@ -60,7 +60,7 @@ function AboutBox({ about_img, sub_title, title, content_1, content_2 }) {
 
 const AboutAreaTwo = () => {
   return (
-    <div className="container">
+    <div className="container" style={{maxWidth: '100%', borderBottom: '1px solid'}}>
       <div
         className="row justify-content-center"
         data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;"
@@ -69,9 +69,9 @@ const AboutAreaTwo = () => {
       <div className="about__row-reverse">
         <AboutBox
           about_img="l2-hero-image.png"
-          title="Arming communities with data and platforms.."
-          content_1="= positive outcomes."
-          content_2="Smart decision making, a focus on measurable impact and the erosion of our carbon footprints."
+          title="Arming households and communities with the data needed.."
+          content_1=".. to make smart decisions about your home."
+          content_2="Saving money and the environment."
         />
       </div>
     </div>

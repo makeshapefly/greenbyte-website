@@ -8,13 +8,15 @@ import AboutArea from "../components/about/about-area";
 import AboutArea2 from "../components/about/about-area-2";
 import TeamArea from "../components/teams/team-area";
 import FaqArea from "../components/faqs/faq-area";
+import MintArea from "../components/mint-area/mint-area";
 
 const HomePage = () => {
   return (
     <Layout>
       <HeroArea3 />
-      <AboutArea2 />
+      <MintArea />
       <AboutArea />
+      <AboutArea2 />
       <TeamArea />
       <SectionDivider />
       <FaqArea />

@@ -22,8 +22,7 @@ const HeroAreaThree = () => {
                   A free to use energy efficiency portal for every property in the UK.
                 </p>
                 <a
-                  href="https://opensea.io/"
-                  target="_blank"
+                  href="#minting"
                   className="banner__btn btn scroll-to-target"
                   style={{background: 'blue'}}
                 >
