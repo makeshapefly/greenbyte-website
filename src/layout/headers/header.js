@@ -51,7 +51,7 @@ const Header = ({ page }) => {
               <div
                 onClick={handleClick}
                 className="mobile-nav-toggler"
-                style={{ marginTop: "0px" }}
+                style={{ marginTop: "5px", color: '#000' }}
               >
                 <i className="flaticon-menu-1"></i>
               </div>

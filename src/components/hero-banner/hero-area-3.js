@@ -26,7 +26,7 @@ const HeroAreaThree = () => {
                   className="banner__btn btn scroll-to-target"
                   style={{background: 'blue'}}
                 >
-                  <span>More</span>
+                  <span>At a glance</span>
                   <i className="unicon-arrow-up-right"></i>
                 </a>
                 <div className="banner__community">
@@ -40,14 +40,14 @@ const HeroAreaThree = () => {
                     </li>
                     <li>
                       <img
-                        src="/assets/img/others/property.png"
+                        src="/assets/img/others/prop2.jpeg"
                         width="48"
                         alt="members"
                       />
                     </li>
                     <li>
                       <img
-                        src="/assets/img/others/property.png"
+                        src="/assets/img/others/prop3.png"
                         width="48"
                         alt="members"
                       />
@@ -60,7 +60,7 @@ const HeroAreaThree = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6" style={{marginTop: 30}}>
               <img src="/assets/img/bg/dashboard2.jpg" />
             </div>
           </div>

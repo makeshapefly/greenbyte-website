@@ -41,7 +41,7 @@ const MintArea = () => {
         >
           <div className="col-xl-8 col-lg-10">
             <div className="section__title text-center title-mb-80">
-              <h2 className="title">What you get</h2>
+              <h2 className="title">At a Glance</h2>
             </div>
           </div>
         </div>
